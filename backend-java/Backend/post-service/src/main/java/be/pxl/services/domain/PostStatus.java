@@ -1,5 +1,5 @@
 package be.pxl.services.domain;
 
 public enum PostStatus {
-    CONCEPT, INGEDIEND, GOEDGEKEURD, GEWEIGERD
+    CONCEPT, INGEDIEND, GOEDGEKEURD, GEWEIGERD, GEPUBLICEERD
 }

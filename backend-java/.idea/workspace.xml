@@ -4,18 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f721f22-d734-426b-b959-e4e005ba4e83" name="Changes" comment="" />
+    <list default="true" id="7f721f22-d734-426b-b959-e4e005ba4e83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/controller/ReviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/domain/ReviewStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/services/IReviewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/services/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/review-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/domain/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/repository/ReviewRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2pnINIWqwpNkeNF3031lQi26oqV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,9 +45,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/yoran/Java-Project/project-YoranByloosPXL/backend-java",
+    "last_opened_file_path": "C:/Users/yoran/Projects/python",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -35,6 +58,22 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Spring Boot.PostServiceApplication">
+    <configuration name="PostServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="post-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="be.pxl.services.PostServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="review-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="be.pxl.services.ReviewServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,6 +91,9 @@
       <option name="presentableId" value="Default" />
       <updated>1733395370261</updated>
       <workItem from="1733395371299" duration="403000" />
+      <workItem from="1734879542690" duration="2758000" />
+      <workItem from="1734958589273" duration="246000" />
+      <workItem from="1735938424827" duration="46000" />
     </task>
     <servers />
   </component>

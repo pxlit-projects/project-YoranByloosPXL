@@ -1,6 +1,8 @@
 package be.pxl.services.controller;
 
 import be.pxl.services.domain.Post;
+import be.pxl.services.dto.CreatePostDTO;
+import be.pxl.services.dto.UpdatePostDTO;
 import be.pxl.services.services.IPostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -12,32 +14,54 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/posts")
-@RequiredArgsConstructor
 public class PostController {
     private final IPostService postService;
 
-    @PostMapping("/create")
-    public ResponseEntity<Post> createPost(@RequestBody Post post) {
-        Post createdPost = postService.createPost(post);
-        return new ResponseEntity<>(createdPost, HttpStatus.CREATED);
+    public PostController(IPostService postService) {
+        this.postService = postService;
     }
 
-    @PostMapping("/draft")
-    public ResponseEntity<Post> saveAsDraft(@RequestBody Post post) {
-        Post createdPost = postService.saveAsDraft(post);
-        return new ResponseEntity<>(createdPost, HttpStatus.CREATED);
+    @PostMapping
+    public ResponseEntity<Post> createPost(@RequestHeader("username") String username,
+                                           @RequestBody CreatePostDTO dto,
+                                           @RequestParam boolean submitForReview) {
+        Post post = postService.createPost(username, dto, submitForReview);
+        return ResponseEntity.ok(post);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Post> updatePost(@PathVariable Long id, @RequestBody Post post) {
-        Post updatedPost = postService.updatePost(id, post);
-        return new ResponseEntity<>(updatedPost, HttpStatus.OK);
+    public ResponseEntity<Post> updatePost(@PathVariable Long id,
+                                           @RequestHeader("username") String username,
+                                           @RequestBody UpdatePostDTO dto) {
+        Post post = postService.updatePost(id, username, dto);
+        return ResponseEntity.ok(post);
+    }
+
+    @PutMapping("/{id}/submit")
+    public ResponseEntity<Post> submitPost(@PathVariable Long id, @RequestHeader("username") String username) {
+        Post post = postService.submitPost(id, username);
+        return ResponseEntity.ok(post);
+    }
+
+    @PutMapping("/{id}/publish")
+    public ResponseEntity<Post> publishPost(@PathVariable Long id, @RequestHeader("username") String username) {
+        Post post = postService.publishPost(id, username);
+        return ResponseEntity.ok(post);
     }
 
     @GetMapping("/published")
-    public ResponseEntity<List<Post>> getPublishedPosts() {
-        List<Post> posts = postService.getPublishedPosts();
-        return new ResponseEntity<>(posts, HttpStatus.OK);
+    public List<Post> getPublishedPosts() {
+        return postService.getPublishedPosts();
+    }
+
+    @GetMapping("/reviewable")
+    public List<Post> getReviewablePosts() {
+        return postService.getReviewablePosts();
+    }
+
+    @GetMapping("/drafts")
+    public List<Post> getDrafts(@RequestHeader("username") String username) {
+        return postService.getDrafts(username);
     }
 
     @GetMapping("/filter")
@@ -48,5 +72,17 @@ public class PostController {
         LocalDateTime dateTime = date != null ? LocalDateTime.parse(date) : null;
         List<Post> filteredPosts = postService.filterPosts(keyword, author, dateTime);
         return new ResponseEntity<>(filteredPosts, HttpStatus.OK);
+    }
+
+    @PutMapping("/{id}/approve")
+    public ResponseEntity<Void> approvePost(@PathVariable Long id) {
+        postService.updatePostStatus(id, "GOEDGEKEURD");
+        return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping("/{id}/disapprove")
+    public ResponseEntity<Void> disapprovePost(@PathVariable Long id) {
+        postService.updatePostStatus(id, "GEWEIGERD");
+        return ResponseEntity.noContent().build();
     }
 }
