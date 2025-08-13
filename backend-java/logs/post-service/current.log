@@ -1,0 +1,126 @@
+17:31:26.254 INFO  post-service [main] b.p.services.PostServiceApplication - Starting PostServiceApplication using Java 23.0.1 with PID 38116 (C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\post-service\target\classes started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java)
+17:31:26.255 DEBUG post-service [main] b.p.services.PostServiceApplication - Running with Spring Boot v3.1.0, Spring v6.0.9
+17:31:26.256 INFO  post-service [main] b.p.services.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+17:31:26.293 INFO  post-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+17:31:26.293 INFO  post-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=post-service, profiles=[default], label=null, version=null, state=null
+17:31:26.765 INFO  post-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:31:26.888 INFO  post-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interfaces.
+17:31:27.041 INFO  post-service [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=8fc0b2e9-8ef8-3bd1-b6db-0b15b6646567
+17:31:27.313 INFO  post-service [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:31:27.321 INFO  post-service [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:31:27.321 INFO  post-service [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:31:27.321 INFO  post-service [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+17:31:27.398 INFO  post-service [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:31:27.398 INFO  post-service [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1104 ms
+17:31:27.515 INFO  post-service [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:31:27.577 INFO  post-service [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+17:31:27.578 INFO  post-service [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+17:31:27.694 INFO  post-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+17:31:27.803 INFO  post-service [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+17:31:27.818 INFO  post-service [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:31:27.937 INFO  post-service [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a8b7e11
+17:31:27.937 INFO  post-service [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:31:27.997 INFO  post-service [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.40
+17:31:28.154 INFO  post-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+17:31:28.673 INFO  post-service [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:31:28.794 INFO  post-service [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:31:29.072 WARN  post-service [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:31:29.439 INFO  post-service [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+17:31:29.491 WARN  post-service [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+17:31:29.544 INFO  post-service [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+17:31:29.574 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+17:31:29.577 INFO  post-service [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:31:29.596 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+17:31:29.596 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+17:31:29.596 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+17:31:29.596 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+17:31:29.596 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+17:31:29.596 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+17:31:29.596 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+17:31:29.893 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+17:31:29.895 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+17:31:29.896 INFO  post-service [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+17:31:29.900 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1755099089899 with initial instances count: 4
+17:31:29.902 INFO  post-service [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application POST-SERVICE with eureka with status UP
+17:31:29.902 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1755099089902, current=UP, previous=STARTING]
+17:31:29.903 INFO  post-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/10.7.8.221:post-service:8080: registering service...
+17:31:29.904 INFO  post-service [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:31:29.920 INFO  post-service [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:31:29.921 INFO  post-service [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+17:31:29.931 INFO  post-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/10.7.8.221:post-service:8080 - registration status: 204
+17:31:29.936 INFO  post-service [main] b.p.services.PostServiceApplication - Started PostServiceApplication in 4.71 seconds (process running for 5.832)
+17:31:42.521 INFO  post-service [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:31:42.521 INFO  post-service [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:31:42.523 INFO  post-service [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:32:25.505 INFO  post-service [http-nio-8080-exec-3] b.p.s.controller.PostController - Retrieving all published posts...
+17:32:46.067 INFO  post-service [http-nio-8080-exec-2] b.p.s.controller.PostController - Retrieving all published posts...
+17:32:46.457 INFO  post-service [http-nio-8080-exec-5] b.p.s.controller.PostController - Retrieving all published posts...
+17:32:46.795 INFO  post-service [http-nio-8080-exec-6] b.p.s.controller.PostController - Retrieving all published posts...
+17:33:01.282 INFO  post-service [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application POST-SERVICE with eureka with status DOWN
+17:33:01.282 INFO  post-service [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1755099181282, current=DOWN, previous=UP]
+17:33:01.282 INFO  post-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/10.7.8.221:post-service:8080: registering service...
+17:33:01.287 INFO  post-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/10.7.8.221:post-service:8080 - registration status: 204
+17:33:01.296 INFO  post-service [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+17:33:01.297 INFO  post-service [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:33:01.303 INFO  post-service [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:33:01.304 INFO  post-service [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+17:33:04.317 INFO  post-service [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Unregistering ...
+17:33:04.334 INFO  post-service [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/10.7.8.221:post-service:8080 - deregister  status: 200
+17:33:04.337 INFO  post-service [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+17:33:06.761 INFO  post-service [main] b.p.services.PostServiceApplication - Starting PostServiceApplication using Java 23.0.1 with PID 27736 (C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\post-service\target\classes started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java)
+17:33:06.763 DEBUG post-service [main] b.p.services.PostServiceApplication - Running with Spring Boot v3.1.0, Spring v6.0.9
+17:33:06.763 INFO  post-service [main] b.p.services.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+17:33:06.800 INFO  post-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+17:33:06.800 INFO  post-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=post-service, profiles=[default], label=null, version=null, state=null
+17:33:07.216 INFO  post-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:33:07.315 INFO  post-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interfaces.
+17:33:07.454 INFO  post-service [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=8fc0b2e9-8ef8-3bd1-b6db-0b15b6646567
+17:33:07.709 INFO  post-service [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:33:07.716 INFO  post-service [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:33:07.716 INFO  post-service [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:33:07.717 INFO  post-service [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+17:33:07.792 INFO  post-service [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:33:07.792 INFO  post-service [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 991 ms
+17:33:07.895 INFO  post-service [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:33:07.945 INFO  post-service [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+17:33:07.947 INFO  post-service [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+17:33:08.050 INFO  post-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+17:33:08.148 INFO  post-service [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+17:33:08.161 INFO  post-service [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:33:08.269 INFO  post-service [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19e8fe55
+17:33:08.271 INFO  post-service [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:33:08.306 INFO  post-service [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.40
+17:33:08.455 INFO  post-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+17:33:08.883 INFO  post-service [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:33:08.952 INFO  post-service [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:33:09.237 WARN  post-service [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:33:09.532 INFO  post-service [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+17:33:09.583 WARN  post-service [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+17:33:09.631 INFO  post-service [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+17:33:09.655 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+17:33:09.659 INFO  post-service [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:33:09.675 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+17:33:09.675 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+17:33:09.676 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+17:33:09.676 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+17:33:09.676 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+17:33:09.676 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+17:33:09.676 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+17:33:09.852 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+17:33:09.854 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+17:33:09.856 INFO  post-service [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+17:33:09.859 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1755099189859 with initial instances count: 4
+17:33:09.861 INFO  post-service [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application POST-SERVICE with eureka with status UP
+17:33:09.861 INFO  post-service [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1755099189861, current=UP, previous=STARTING]
+17:33:09.862 INFO  post-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/10.7.8.221:post-service:8080: registering service...
+17:33:09.863 INFO  post-service [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:33:09.879 INFO  post-service [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:33:09.881 INFO  post-service [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+17:33:09.892 INFO  post-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/10.7.8.221:post-service:8080 - registration status: 204
+17:33:09.897 INFO  post-service [main] b.p.services.PostServiceApplication - Started PostServiceApplication in 3.821 seconds (process running for 4.295)
+17:33:22.638 INFO  post-service [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:33:22.639 INFO  post-service [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:33:22.639 INFO  post-service [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+17:33:22.657 INFO  post-service [http-nio-8080-exec-1] b.p.s.controller.PostController - Retrieving all published posts...
+17:33:31.671 INFO  post-service [http-nio-8080-exec-2] b.p.s.controller.PostController - Retrieving all published posts...
+17:33:32.248 INFO  post-service [http-nio-8080-exec-3] b.p.s.controller.PostController - Retrieving all published posts...

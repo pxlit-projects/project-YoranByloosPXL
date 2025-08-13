@@ -1,10 +1,14 @@
 package be.pxl.services.client;
 
+import be.pxl.services.domain.Post;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 
-@FeignClient(name = "post-service-client", url = "http://localhost:8080/api/posts")
+import java.util.List;
+
+@FeignClient(name = "post-service", path = "/api/posts")
 public interface PostClient {
 
     @PutMapping("/{id}/approve")
@@ -12,4 +16,7 @@ public interface PostClient {
 
     @PutMapping("/{id}/disapprove")
     void disapprovePost(@PathVariable("id") Long id);
+
+    @GetMapping("/reviewable")
+    List<Post> getReviewablePosts();
 }

@@ -1,5 +1,7 @@
 package be.pxl.services.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import be.pxl.services.domain.Post;
 import be.pxl.services.dto.CreatePostDTO;
 import be.pxl.services.dto.UpdatePostDTO;
@@ -16,6 +18,7 @@ import java.util.List;
 @RequestMapping("/api/posts")
 public class PostController {
     private final IPostService postService;
+    private static final Logger log = LoggerFactory.getLogger(PostController.class);
 
     public PostController(IPostService postService) {
         this.postService = postService;
@@ -51,6 +54,7 @@ public class PostController {
 
     @GetMapping("/published")
     public List<Post> getPublishedPosts() {
+        log.info("Retrieving all published posts...");
         return postService.getPublishedPosts();
     }
 

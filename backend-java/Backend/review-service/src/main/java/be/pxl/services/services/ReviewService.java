@@ -1,8 +1,8 @@
 package be.pxl.services.services;
 import be.pxl.services.client.PostClient;
+import be.pxl.services.domain.Post;
 import be.pxl.services.domain.Review;
 import be.pxl.services.repository.ReviewRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -19,6 +19,11 @@ public class ReviewService implements IReviewService {
     }
 
     @Override
+    public List<Post> getReviewablePosts() {
+        return postClient.getReviewablePosts();
+    }
+
+    @Override
     public List<Review> getReviewsByPostId(Long postId) {
         return reviewRepository.findByPostId(postId);
     }
@@ -31,7 +36,8 @@ public class ReviewService implements IReviewService {
         review.setComment(comment);
         review.setCreatedAt(LocalDateTime.now());
         reviewRepository.save(review);
-        postClient.approvePost(postId);
+        postClient.disapprovePost(postId);
+
         return review;
     }
 

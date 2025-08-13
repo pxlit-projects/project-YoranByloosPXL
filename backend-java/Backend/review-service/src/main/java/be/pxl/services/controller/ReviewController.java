@@ -1,5 +1,6 @@
 package be.pxl.services.controller;
 
+import be.pxl.services.domain.Post;
 import be.pxl.services.domain.Review;
 import be.pxl.services.services.ReviewService;
 import lombok.RequiredArgsConstructor;
@@ -16,6 +17,11 @@ public class ReviewController {
 
     public ReviewController(ReviewService reviewService) {
         this.reviewService = reviewService;
+    }
+
+    @GetMapping("/reviewable")
+    public List<Post> getReviewablePosts() {
+        return reviewService.getReviewablePosts();
     }
 
     @GetMapping("/{postId}")
