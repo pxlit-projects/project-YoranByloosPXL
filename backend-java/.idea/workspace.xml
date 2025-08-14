@@ -5,35 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f721f22-d734-426b-b959-e4e005ba4e83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/project-YoranByloosPXL.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/discovery-service.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/gateway-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/gateway-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/gateway-service/src/main/java/be/pxl/services/GatewayServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/gateway-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/gateway-service/src/test/java/be/pxl/services/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/post-service/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/comment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/comment-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/comment-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/comment-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/post-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/post-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/review-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/review-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/discovery-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/discovery-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/comment-service/src/main/java/be/pxl/services/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/comment-service/src/main/java/be/pxl/services/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/comment-service/src/main/java/be/pxl/services/services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/comment-service/src/main/java/be/pxl/services/services/CommentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/post-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/review-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/client/PostClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/client/PostClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/services/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/services/IReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/services/IReviewService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/services/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/services/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/post-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/post-service/current.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +75,12 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service\src\main\resources" />
+      <recent name="C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\comment-service\src\main\resources" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -170,7 +155,7 @@
       <workItem from="1734879542690" duration="2758000" />
       <workItem from="1734958589273" duration="246000" />
       <workItem from="1735938424827" duration="46000" />
-      <workItem from="1754914618407" duration="14679000" />
+      <workItem from="1754914618407" duration="17404000" />
     </task>
     <servers />
   </component>

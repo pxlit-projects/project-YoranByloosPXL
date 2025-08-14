@@ -4,7 +4,8 @@ import be.pxl.services.dto.CreateCommentDTO;
 import be.pxl.services.dto.UpdateCommentDTO;
 import be.pxl.services.repository.CommentRepository;
 import be.pxl.services.domain.Comment;
-import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -12,6 +13,8 @@ import java.util.List;
 
 @Service
 public class CommentService implements ICommentService {
+
+    private static final Logger log = LoggerFactory.getLogger(CommentService.class);
     private final CommentRepository commentRepository;
 
     public CommentService(CommentRepository commentRepository) {
@@ -19,10 +22,13 @@ public class CommentService implements ICommentService {
     }
 
     public List<Comment> getCommentsByPostId(Long postId) {
-        return commentRepository.findByPostId(postId);
+        List<Comment> comments = commentRepository.findByPostId(postId);
+        log.info("Fetched comments for postId={} count={}", postId, comments.size());
+        return comments;
     }
 
     public Comment addComment(String username, CreateCommentDTO dto) {
+        log.info("Add comment requested by user={} postId={}", username, dto.getPostId());
         Comment comment = new Comment();
         comment.setPostId(dto.getPostId());
         comment.setUsername(username);
@@ -33,9 +39,13 @@ public class CommentService implements ICommentService {
     }
 
     public Comment updateComment(Long commentId, String username, UpdateCommentDTO dto) {
-        Comment comment = commentRepository.findById(commentId)
-                .orElseThrow(() -> new IllegalArgumentException("Comment not found"));
+        log.info("Update comment requested commentId={} by user={}", commentId, username);
+        Comment comment = commentRepository.findById(commentId).orElseThrow(() -> {
+            log.warn("Comment not found commentId={}", commentId);
+            return new IllegalArgumentException("Comment not found");
+        });
         if (!comment.getUsername().equals(username)) {
+            log.warn("Unauthorized comment update attempt commentId={} by user={}", commentId, username);
             throw new IllegalArgumentException("You can only update your own comments");
         }
         comment.setContent(dto.getContent());
@@ -44,9 +54,13 @@ public class CommentService implements ICommentService {
     }
 
     public void deleteComment(Long commentId, String username) {
-        Comment comment = commentRepository.findById(commentId)
-                .orElseThrow(() -> new IllegalArgumentException("Comment not found"));
+        log.info("Delete comment requested commentId={} by user={}", commentId, username);
+        Comment comment = commentRepository.findById(commentId).orElseThrow(() -> {
+            log.warn("Comment not found commentId={}", commentId);
+            return new IllegalArgumentException("Comment not found");
+        });
         if (!comment.getUsername().equals(username)) {
+            log.warn("Unauthorized comment delete attempt commentId={} by user={}", commentId, username);
             throw new IllegalArgumentException("You can only delete your own comments");
         }
         commentRepository.delete(comment);

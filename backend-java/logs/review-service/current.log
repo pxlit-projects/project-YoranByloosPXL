@@ -1,0 +1,112 @@
+18:03:19.901 INFO  review-service [main] b.p.s.ReviewServiceApplication - Starting ReviewServiceApplication using Java 23.0.1 with PID 35344 (C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service\target\classes started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java)
+18:03:19.903 DEBUG review-service [main] b.p.s.ReviewServiceApplication - Running with Spring Boot v3.1.0, Spring v6.0.9
+18:03:19.904 INFO  review-service [main] b.p.s.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
+18:03:19.954 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+18:03:19.956 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=review-service, profiles=[default], label=null, version=null, state=null
+18:03:20.515 INFO  review-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:03:20.639 INFO  review-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 2 JPA repository interfaces.
+18:03:20.848 INFO  review-service [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=8cb85935-ebca-357d-94c0-2d0a3a5c8510
+18:03:20.916 INFO  review-service [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'be.pxl.services.client.PostClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:03:21.172 INFO  review-service [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+18:03:21.180 INFO  review-service [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+18:03:21.180 INFO  review-service [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:03:21.180 INFO  review-service [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+18:03:21.282 INFO  review-service [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:03:21.282 INFO  review-service [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1325 ms
+18:03:21.431 INFO  review-service [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:03:21.488 INFO  review-service [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+18:03:21.490 INFO  review-service [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+18:03:21.612 INFO  review-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+18:03:21.724 INFO  review-service [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:03:21.737 INFO  review-service [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:03:21.879 INFO  review-service [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13f2d42c
+18:03:21.881 INFO  review-service [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:03:21.941 INFO  review-service [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.40
+18:03:22.135 INFO  review-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+18:03:22.710 INFO  review-service [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:03:22.823 INFO  review-service [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:03:23.182 WARN  review-service [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:03:23.257 INFO  review-service [main] o.s.c.o.FeignClientFactoryBean - For 'post-service' URL not provided. Will try picking an instance via load-balancing.
+18:03:23.731 INFO  review-service [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+18:03:23.780 WARN  review-service [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:03:23.834 INFO  review-service [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+18:03:23.867 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+18:03:23.872 INFO  review-service [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:03:23.890 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:03:23.890 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:03:23.890 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:03:23.890 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+18:03:23.890 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:03:23.890 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+18:03:23.890 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:03:24.171 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+18:03:24.173 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+18:03:24.176 INFO  review-service [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:03:24.179 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1755101004178 with initial instances count: 1
+18:03:24.181 INFO  review-service [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application REVIEW-SERVICE with eureka with status UP
+18:03:24.182 INFO  review-service [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1755101004182, current=UP, previous=STARTING]
+18:03:24.183 INFO  review-service [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+18:03:24.183 INFO  review-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REVIEW-SERVICE/10.7.8.221:review-service:8081: registering service...
+18:03:24.220 INFO  review-service [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+18:03:24.222 INFO  review-service [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+18:03:24.242 INFO  review-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REVIEW-SERVICE/10.7.8.221:review-service:8081 - registration status: 204
+18:03:24.250 INFO  review-service [main] b.p.s.ReviewServiceApplication - Started ReviewServiceApplication in 5.297 seconds (process running for 5.973)
+18:08:23.903 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:14:00.354 WARN  review-service [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s233ms783µs300ns).
+18:14:02.112 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:19:02.114 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:24:02.127 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:29:02.131 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:34:02.141 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:55:41.432 WARN  review-service [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21h18m13s205ms464µs600ns).
+15:56:42.830 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:01:42.843 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:06:42.858 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:11:42.871 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:16:42.882 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:21:42.893 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:26:42.902 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:31:42.904 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:36:42.915 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:41:42.927 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:46:42.939 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:51:42.948 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:56:42.964 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:29:34.345 WARN  review-service [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m51s921ms721µs600ns).
+17:32:04.842 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:37:04.849 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:42:04.859 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:47:04.863 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:52:04.878 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:57:04.894 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:02:04.904 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:45:14.279 WARN  review-service [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h41m9s466ms233µs).
+19:47:44.349 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:51:38.048 WARN  review-service [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s713ms782µs900ns).
+19:53:08.027 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:58:08.030 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:03:08.043 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:08:08.049 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:13:08.054 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:18:08.064 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:23:08.072 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:28:08.078 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:33:08.085 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:38:08.096 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:09:30.946 WARN  review-service [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m52s244ms802µs200ns).
+21:12:30.294 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:17:30.297 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:22:30.302 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:27:30.304 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:32:30.311 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:37:30.316 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:42:30.325 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:59:45.899 WARN  review-service [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m14s431ms168µs700ns).
+22:02:14.724 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:07:14.736 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:12:14.746 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:17:14.752 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:22:14.762 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:27:14.767 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:28:32.010 WARN  review-service [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s695ms669µs600ns).
+22:29:52.015 WARN  review-service [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s41ms991µs200ns).
