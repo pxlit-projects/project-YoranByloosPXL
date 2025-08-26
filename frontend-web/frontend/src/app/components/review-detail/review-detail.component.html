@@ -1,0 +1,18 @@
+<section class="wrap">
+  <div *ngIf="loading">Laden…</div>
+  <div class="error" *ngIf="error">{{ error }}</div>
+
+  <article *ngIf="post">
+    <h1 class="title">{{ post.title }}</h1>
+    <p class="meta">{{ post.createdAt | date:'dd/MM/yyyy' }} — {{ post.author }}</p>
+    <div class="content">{{ post.content }}</div>
+
+    <aside class="panel">
+      <textarea [(ngModel)]="note" placeholder="Opmerking voor afwijzen…" rows="4"></textarea>
+      <div class="btns">
+        <button class="btn reject" (click)="reject()">Afwijzen</button>
+        <button class="btn approve" (click)="approve()">Goedkeuren</button>
+      </div>
+    </aside>
+  </article>
+</section>

@@ -25,9 +25,9 @@ public class ReviewService implements IReviewService {
     }
 
     @Override
-    public List<Post> getReviewablePosts() {
-        List<Post> posts = postClient.getReviewablePosts();
-        log.info("Fetched reviewable posts count={}", posts.size());
+    public List<Post> getReviewablePosts(String username) {
+        List<Post> posts = postClient.getReviewablePosts(username);
+        log.info("Fetched reviewable posts for reviewer={} count={}", username, posts.size());
         return posts;
     }
 

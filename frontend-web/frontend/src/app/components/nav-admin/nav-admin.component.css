@@ -1,0 +1,46 @@
+:host { display:block; }
+
+.admin-nav {
+  background: #fff;
+  border-bottom: 5px solid #08244a;
+}
+
+.admin-nav__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.admin-badge {
+  background: #08244a;
+  color: #fff;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.tabs {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs a {
+  display: inline-block;
+  padding: 8px 6px;
+  text-decoration: none;
+  color: #0b2b5a;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs a.active,
+.tabs a:hover {
+  border-bottom-color: #0b2b5a;
+}

@@ -5,14 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f721f22-d734-426b-b959-e4e005ba4e83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/BookmarkServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/client/PostClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/controller/BookmarkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/domain/Bookmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/repository/BookmarkRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/services/BookmarkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/services/IBookmarkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/java/be/pxl/services/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/bookmark-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/comment-service/src/main/java/be/pxl/services/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/comment-service/src/main/java/be/pxl/services/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/comment-service/src/main/java/be/pxl/services/services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/comment-service/src/main/java/be/pxl/services/services/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/comment-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/comment-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/gateway-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/post-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/post-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/services/IPostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/services/IPostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/services/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/client/PostClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/client/PostClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/services/IReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/services/IReviewService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/services/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/src/main/java/be/pxl/services/services/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/comment-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/comment-service/current.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/post-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/post-service/current.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/review-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/review-service/current.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +45,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -29,10 +53,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -41,40 +65,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.CommentServiceApplication.executor": "Run",
-    "Spring Boot.ConfigServiceApplication.executor": "Run",
-    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
-    "Spring Boot.GatewayServiceApplication.executor": "Run",
-    "Spring Boot.PostServiceApplication.executor": "Run",
-    "Spring Boot.ReviewServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/yoran/Java-Project/project-YoranByloosPXL/backend-java/Backend/review-service/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BookmarkServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CommentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PostServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ReviewServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yoran/Java-Project/project-YoranByloosPXL/backend-java/Backend/review-service/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service\src\main\resources" />
@@ -92,6 +120,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ConfigServiceApplication">
+    <configuration name="BookmarkServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="bookmark-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="be.pxl.services.BookmarkServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="comment-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="be.pxl.services.CommentServiceApplication" />
@@ -155,7 +190,10 @@
       <workItem from="1734879542690" duration="2758000" />
       <workItem from="1734958589273" duration="246000" />
       <workItem from="1735938424827" duration="46000" />
-      <workItem from="1754914618407" duration="17404000" />
+      <workItem from="1754914618407" duration="18074000" />
+      <workItem from="1755784070573" duration="9265000" />
+      <workItem from="1756063983588" duration="16410000" />
+      <workItem from="1756206534784" duration="4086000" />
     </task>
     <servers />
   </component>

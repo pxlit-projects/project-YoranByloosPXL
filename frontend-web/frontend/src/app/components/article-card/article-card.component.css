@@ -1,0 +1,39 @@
+:host { display: block; }
+
+.card {
+  background: #fff;
+  border: 4px solid #e1e7f0;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.card__title {
+  margin: 0 0 8px;
+  font-weight: 800;
+  color: #0b2b5a;
+}
+
+.card__text {
+  margin: 0 0 12px;
+  color: #334155;
+  line-height: 1.35;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date { color: #6b7280; font-size: 13px; }
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 14px;
+  background: #0b2b5a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.btn:hover { background:#113a7e; }

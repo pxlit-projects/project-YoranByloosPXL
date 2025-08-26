@@ -1,0 +1,86 @@
+/* src/app/components/comment-card/comment-card.component.css */
+:host { display: block; }
+
+.cmt {
+  padding: 14px 16px;
+  border: 1px solid #e6ebf3;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.cmt + .cmt { margin-top: 10px; }
+
+.cmt__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.cmt__meta {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.cmt__user { color: #0b2b5a; }
+.cmt__time { color: #6e7a8c; font-size: 12px; }
+
+.cmt__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 34px; height: 34px;
+  display: inline-grid;
+  place-items: center;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .15s ease;
+}
+
+.icon-btn:hover { background: rgba(0,0,0,.05); }
+
+.icon {
+  width: 18px; height: 18px; display: block; object-fit: contain;
+}
+
+.cmt__body { color: #1f2a37; }
+
+.cmt__edit {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cmt__input {
+  flex: 1 1 280px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #e0e6ef;
+  background: #f7f9fc;
+  padding: 0 12px;
+  outline: none;
+}
+
+.btn {
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: none;
+  background: #08244a;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: #08244a;
+  border: 1px solid #cdd6e4;
+}

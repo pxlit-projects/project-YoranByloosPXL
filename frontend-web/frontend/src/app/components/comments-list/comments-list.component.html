@@ -1,0 +1,39 @@
+<section class="panel comments">
+  <h3 class="panel__title">Comments</h3>
+
+  <!-- Nieuwe comment -->
+  <form class="new" (ngSubmit)="add()" #f="ngForm">
+    <input
+      class="input"
+      name="content"
+      [(ngModel)]="newContent"
+      placeholder="Schrijf een reactie..."
+      required
+    />
+
+    <div class="actions">
+      <button class="btn" type="submit" [disabled]="adding || !newContent?.trim()">
+        {{ adding ? 'Plaatsen…' : 'Plaatsen' }}
+      </button>
+      <span class="hint" *ngIf="!newContent?.trim()">Voer eerst tekst in.</span>
+    </div>
+  </form>
+
+  <div class="divider"></div>
+
+  <!-- Lijst -->
+  <ng-container *ngIf="comments?.length; else empty">
+    <app-comments-card
+      *ngFor="let c of comments"
+      class="comment-item"
+      [comment]="c"
+      [currentUser]="(auth.username$ | async) ?? null"
+      (updated)="onUpdated($event)"
+      (deleted)="onDeleted($event)"
+    ></app-comments-card>
+  </ng-container>
+
+  <ng-template #empty>
+    <p class="empty">Nog geen reacties…</p>
+  </ng-template>
+</section>

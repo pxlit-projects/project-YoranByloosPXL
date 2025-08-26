@@ -1,0 +1,72 @@
+:host { display: block; }
+
+/* bar */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #08244a;
+  color: #fff;
+}
+
+.nav__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;      /* center logo */
+  align-items: center;
+  height: 80px;
+  padding: 0 32px;
+}
+
+/* linkse zone voor username */
+.nav__left {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav__left .user {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* rechter iconen */
+.nav__right {
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 16px;
+}
+
+/* logo exact in het midden */
+.brand {
+  justify-self: center;
+  line-height: 0;
+}
+.brand__logo {
+  height: 60px;
+  display: block;
+}
+
+/* icon-knoppen */
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.icon-btn .icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+  object-fit: contain;
+}

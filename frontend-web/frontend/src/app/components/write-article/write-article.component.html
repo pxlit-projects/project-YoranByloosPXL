@@ -1,0 +1,22 @@
+<section class="write">
+  <div class="write__inner">
+    <h1>Nieuw artikel</h1>
+
+    <form [formGroup]="form" (ngSubmit)="saveDraft()" class="form">
+      <label class="label" for="title">Titel</label>
+      <input id="title" type="text" formControlName="title" class="input" />
+
+      <label class="label" for="desc">Beschrijving</label>
+      <textarea id="desc" formControlName="description" class="textarea"></textarea>
+
+      <div class="actions">
+        <button type="submit" class="btn" [disabled]="saving">
+          {{ saving ? 'Bezig…' : 'Opslaan als draft' }}
+        </button>
+      </div>
+
+      <div class="msg ok" *ngIf="successMsg">{{ successMsg }}</div>
+      <div class="msg err" *ngIf="errorMsg">{{ errorMsg }}</div>
+    </form>
+  </div>
+</section>

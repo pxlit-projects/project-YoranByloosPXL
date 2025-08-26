@@ -1,0 +1,10 @@
+<article class="card">
+  <h3 class="card__title">{{ post.title }}</h3>
+
+  <p class="card__text">{{ excerpt }}</p>
+
+  <div class="card__footer">
+    <span class="date">{{ post.createdAt | date:'dd/MM/yyyy' }}</span>
+    <a class="btn" [routerLink]="['/posts', post.id]">Klik om alles te lezen</a>
+  </div>
+</article>

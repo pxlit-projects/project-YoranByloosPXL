@@ -1,0 +1,8 @@
+<article class="card">
+  <h3 class="title">{{ post.title }}</h3>
+  <p class="excerpt">{{ post.content | slice:0:260 }}<span *ngIf="(post.content || '').length > 260">…</span></p>
+  <div class="meta">
+    <span>{{ post.createdAt | date:'dd/MM/yyyy' }} door <b>{{ post.author }}</b></span>
+    <button class="btn" (click)="open()">Reviewen</button>
+  </div>
+</article>

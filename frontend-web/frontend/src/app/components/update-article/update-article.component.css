@@ -1,0 +1,15 @@
+/* src/app/pages/update-article/update-article.component.css */
+.wrap{ max-width:900px; margin:24px auto; padding:0 16px; }
+h1{ margin:0 0 16px; color:#0b2b5a; font-weight:800; }
+.form{ display:grid; gap:10px; }
+.label{ font-style:italic; color:#0b2b5a; }
+.input, .textarea{
+  width:97%; border:1px solid #d7deea; background:#f1f3f7;
+  border-radius:12px; padding:10px 12px; outline:none;
+}
+.textarea{ min-height:220px; resize:vertical; width: 97%; }
+.btn{
+  align-self:start; height:34px; padding:0 16px; border-radius:18px; border:none;
+  background:#08244a; color:#fff; cursor:pointer;
+}
+.state{ color:#40506a } .err{ color:#b85c5c }

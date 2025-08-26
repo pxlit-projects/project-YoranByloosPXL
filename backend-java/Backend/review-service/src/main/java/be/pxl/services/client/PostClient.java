@@ -5,6 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 
 import java.util.List;
 
@@ -18,5 +19,5 @@ public interface PostClient {
     void disapprovePost(@PathVariable("id") Long id);
 
     @GetMapping("/reviewable")
-    List<Post> getReviewablePosts();
+    List<Post> getReviewablePosts(@RequestHeader("username") String username);
 }

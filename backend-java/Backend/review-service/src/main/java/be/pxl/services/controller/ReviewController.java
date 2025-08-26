@@ -23,11 +23,10 @@ public class ReviewController {
     }
 
     @GetMapping("/reviewable")
-    public List<Post> getReviewablePosts() {
-        log.info("GetReviewablePosts called");
-        return reviewService.getReviewablePosts();
+    public List<Post> getReviewablePosts(@RequestHeader("username") String username) {
+        log.info("GetReviewablePosts called reviewer={}", username);
+        return reviewService.getReviewablePosts(username);
     }
-
     @GetMapping("/{postId}")
     public ResponseEntity<List<Review>> getReviewsByPostId(@PathVariable Long postId) {
         log.info("GetReviewsByPostId called postId={}", postId);

@@ -8,8 +8,10 @@ import be.pxl.services.dto.UpdatePostDTO;
 import be.pxl.services.services.IPostService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -59,6 +61,14 @@ public class PostController {
         return ResponseEntity.ok(post);
     }
 
+    @PutMapping("/{id}/to-draft")
+    public ResponseEntity<Void> moveToDraft(@PathVariable Long id,
+                                            @RequestHeader("username") String username) {
+        log.info("MoveToDraft requested id={} by user={}", id, username);
+        postService.moveToDraft(id, username);
+        return ResponseEntity.noContent().build();
+    }
+
     @GetMapping("/published")
     public List<Post> getPublishedPosts() {
         log.info("GetPublishedPosts called");
@@ -66,9 +76,9 @@ public class PostController {
     }
 
     @GetMapping("/reviewable")
-    public List<Post> getReviewablePosts() {
-        log.info("GetReviewablePosts called");
-        return postService.getReviewablePosts();
+    public List<Post> getReviewablePosts(@RequestHeader("username") String username) {
+        log.info("GetReviewablePosts called reviewer={}", username);
+        return postService.getReviewablePosts(username);
     }
 
     @GetMapping("/drafts")
@@ -81,12 +91,44 @@ public class PostController {
     public ResponseEntity<List<Post>> filterPosts(
             @RequestParam(required = false) String keyword,
             @RequestParam(required = false) String author,
-            @RequestParam(required = false) String date) {
+            @RequestParam(required = false) String date
+    ) {
         log.info("FilterPosts called keyword={} author={} date={}", keyword, author, date);
-        LocalDateTime dateTime = (date != null ? LocalDateTime.parse(date) : null);
+
+        LocalDateTime dateTime = parseFlexible(date);
         List<Post> filteredPosts = postService.filterPosts(keyword, author, dateTime);
+
         log.debug("FilterPosts result count={}", filteredPosts.size());
-        return new ResponseEntity<>(filteredPosts, HttpStatus.OK);
+        return ResponseEntity.ok(filteredPosts);
+    }
+
+    private LocalDateTime parseFlexible(String raw) {
+        if (!StringUtils.hasText(raw)) return null;
+        try {
+            // formaat: 2025-09-25T00:00:00
+            return LocalDateTime.parse(raw);
+        } catch (Exception ignore) {
+        }
+        try {
+            // formaat: 2025-09-25
+            return LocalDate.parse(raw).atStartOfDay();
+        } catch (Exception ignore) {
+        }
+        log.warn("Unsupported date format '{}', ignoring date filter", raw);
+        return null;
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Post> getPostById(@PathVariable Long id) {
+        log.info("GetPostById called id={}", id);
+        Post post = postService.getById(id);
+        return ResponseEntity.ok(post);
+    }
+
+    @GetMapping("/by-ids")
+    public List<Post> getPostsByIds(@RequestParam List<Long> ids) {
+        log.info("GetPostsByIds called count={}", ids.size());
+        return postService.getByIds(ids);
     }
 
     @PutMapping("/{id}/approve")
@@ -101,5 +143,11 @@ public class PostController {
         log.info("DisapprovePost requested id={}", id);
         postService.updatePostStatus(id, "GEWEIGERD");
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/submissions")
+    public List<Post> getMySubmissions(@RequestHeader("username") String username) {
+        log.info("GetMySubmissions called user={}", username);
+        return postService.getMySubmissions(username);
     }
 }

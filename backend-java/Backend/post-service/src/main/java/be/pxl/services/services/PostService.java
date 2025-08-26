@@ -8,7 +8,9 @@ import be.pxl.services.repository.PostRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -29,9 +31,11 @@ public class PostService implements IPostService {
         return posts;
     }
 
-    public List<Post> getReviewablePosts() {
-        List<Post> posts = postRepository.findByStatus(PostStatus.INGEDIEND);
-        log.info("Fetched reviewable posts count={}", posts.size());
+    @Override
+    public List<Post> getReviewablePosts(String reviewerUsername) {
+        // Alleen INGEDIEND en NIET geschreven door de reviewer
+        List<Post> posts = postRepository.findByStatusAndAuthorNot(PostStatus.INGEDIEND, reviewerUsername);
+        log.info("Fetched reviewable posts for reviewer={} count={}", reviewerUsername, posts.size());
         return posts;
     }
 
@@ -78,9 +82,18 @@ public class PostService implements IPostService {
 
     @Override
     public List<Post> filterPosts(String keyword, String author, LocalDateTime date) {
-        log.info("Filter posts keyword='{}' author='{}' date={}", keyword, author, date);
-        List<Post> result = postRepository.findByTitleContainingAndAuthorAndCreatedAt(keyword, author, date);
-        log.debug("Filter result count={}", result.size());
+        String kw = StringUtils.hasText(keyword) ? keyword.trim() : null;
+        String au = StringUtils.hasText(author)  ? author.trim()  : null;
+
+        LocalDateTime start = null;
+        LocalDateTime end   = null;
+        if (date != null) {
+            LocalDate d = date.toLocalDate();       // hele dag
+            start = d.atStartOfDay();
+            end   = start.plusDays(1);
+        }
+
+        List<Post> result = postRepository.filterPublished(kw, au, start, end);
         return result;
     }
 
@@ -132,5 +145,51 @@ public class PostService implements IPostService {
         post.setUpdatedAt(LocalDateTime.now());
         postRepository.save(post);
         log.debug("Post status updated id={} status={}", id, post.getStatus());
+    }
+
+    public Post getById(Long id) {
+        log.info("Get post by id requested id={}", id);
+        return postRepository.findById(id).orElseThrow(() -> {
+            log.warn("Post not found id={}", id);
+            return new IllegalArgumentException("Post not found");
+        });
+    }
+
+    public List<Post> getByIds(List<Long> ids) {
+        log.info("Get posts by ids requested count={}", (ids == null ? 0 : ids.size()));
+        if (ids == null || ids.isEmpty()) {
+            return List.of();
+        }
+        List<Post> posts = postRepository.findByIdInAndPublishedTrue(ids);
+        log.debug("Get posts by ids result count={}", posts.size());
+        return posts;
+    }
+
+    @Override
+    public List<Post> getMySubmissions(String username) {
+        List<PostStatus> statuses = List.of(
+                PostStatus.INGEDIEND,
+                PostStatus.GOEDGEKEURD,
+                PostStatus.GEWEIGERD
+        );
+        List<Post> posts = postRepository.findByAuthorAndStatusInOrderByUpdatedAtDesc(username, statuses);
+        log.info("Fetched my submissions for user={} count={}", username, posts.size());
+        return posts;
+    }
+
+    @Override
+    public void moveToDraft(Long id, String username) {
+        Post post = postRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Post not found"));
+        if (!post.getAuthor().equals(username)) {
+            throw new IllegalArgumentException("You can only move your own posts");
+        }
+        if (post.getStatus() != PostStatus.GEWEIGERD) {
+            throw new IllegalArgumentException("Only rejected posts can be moved back to draft");
+        }
+        post.setStatus(PostStatus.CONCEPT);
+        post.setPublished(false);
+        post.setUpdatedAt(LocalDateTime.now());
+        postRepository.save(post);
     }
 }

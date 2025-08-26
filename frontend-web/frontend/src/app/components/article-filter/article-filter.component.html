@@ -1,0 +1,11 @@
+<form class="filter" [formGroup]="form" (ngSubmit)="submit()">
+  <div class="row">
+    <input class="input" formControlName="keyword" placeholder="Zoeken op titel/inhoud" />
+    <input class="input input--author" formControlName="author" placeholder="Auteur (optioneel)" />
+    <label class="date">
+      <input type="date" formControlName="dateOnly" />
+    </label>
+    <button class="btn" type="submit">Zoeken</button>
+    <button class="btn btn--ghost" type="button" (click)="clear()">Reset</button>
+  </div>
+</form>

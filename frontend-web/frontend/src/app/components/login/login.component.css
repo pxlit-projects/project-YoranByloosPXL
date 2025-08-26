@@ -1,0 +1,164 @@
+:host { display: block; }
+
+
+.login__inner {
+  max-width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+
+  /* navbar is ~64px hoog -> neem rest van het scherm in */
+  min-height: calc(100vh - 80px);
+  background: #fff;
+  border-radius: 8px;
+}
+
+.login__left { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.login__right { 
+  position: relative; 
+}
+
+.illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(520px, 100%);  /* schaalt netjes mee */
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+h1 {
+  margin: 0 0 60px;
+  font-weight: 800;
+  font-size: 30px;
+  color: #0b2b5a;
+  line-height: 1.2;
+}
+
+.form { max-width: 520px; }
+
+.label, .switch-label {
+  display: block;
+  font-size: 15px;
+  color: #0b2b5a;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #e0e6ef;
+  background: #f1f3f7;
+  padding: 0 14px;
+  outline: none;
+  transition: box-shadow .15s ease, border-color .15s ease;
+  margin-bottom: 30px;
+}
+
+.input:focus {
+  border-color: #1d3f77;
+  box-shadow: 0 0 0 3px rgba(29,63,119,0.12);
+  background: #fff;
+}
+
+.hint {
+  color: #b85c5c;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.switch-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 14px 0 22px;
+}
+
+/* afmetingen (mag je laten zoals je had) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 62px;
+  height: 34px;
+  margin-bottom: 30px;
+}
+.switch input { display: none; }
+
+/* rechthoekige track */
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #1d3f77;
+  border-radius: 0;        /* <— geen afgeronde hoeken */
+  transition: background .2s ease;
+}
+
+/* rechthoekige knop */
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 25px;
+  left: 4px;
+  top: 4px;
+  background: #fff;
+  border-radius: 0;        /* <— geen afgeronde hoeken */
+  box-shadow: 0 1px 2px rgba(0,0,0,.25);
+  transition: transform .2s ease;
+}
+
+/* verplaatsing wanneer aangevinkt */
+.switch input:checked + .slider {
+  background: #0e9c57;
+}
+.switch input:checked + .slider::before {
+  transform: translateX(27px); /* 42 - 16 - 8 = 18 */
+}
+
+.btn {
+  height: 44px;
+  padding: 0 22px;
+  border-radius: 15px;
+  border: none;
+  background: #1d3f77;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform .05s ease, background .15s ease, opacity .15s ease;
+}
+
+.btn:hover { background: #08244a; }
+.btn:active { transform: translateY(1px); }
+.btn[disabled] { opacity: .6; cursor: default; }
+
+.error { color: #b85c5c; margin-top: 12px; }
+
+.art {
+  width: min(90%, 520px);
+  aspect-ratio: 4 / 3.2;
+  background:
+    url('/assets/newsman.png') center / contain no-repeat,
+    linear-gradient(135deg, #e9eef6, #f6f8fb);
+  border-radius: 8px;
+  border: 1px solid #e6ebf3;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .login__inner {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .login__right { display: none; }
+}

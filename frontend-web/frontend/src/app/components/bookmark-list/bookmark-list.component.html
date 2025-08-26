@@ -1,0 +1,15 @@
+<section class="wrap">
+  <h1 class="heading">MIJN BOOKMARKS</h1>
+
+  <div *ngIf="loading" class="state">Laden...</div>
+  <div *ngIf="!loading && error" class="state state--err">{{ error }}</div>
+  <div *ngIf="!loading && !error && items.length === 0" class="state">Nog geen bookmarks.</div>
+
+  <div class="list" *ngIf="!loading && !error && items.length">
+    <app-bookmark-card
+      *ngFor="let p of items"
+      [post]="p"
+      (removed)="onRemoved($event)">
+    </app-bookmark-card>
+  </div>
+</section>

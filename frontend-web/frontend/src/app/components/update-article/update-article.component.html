@@ -1,0 +1,21 @@
+<!-- src/app/pages/update-article/update-article.component.html -->
+<section class="wrap">
+  <h1>Bewerk artikel</h1>
+
+  <div *ngIf="loading" class="state">Laden…</div>
+  <div *ngIf="!loading">
+    <form [formGroup]="form" (ngSubmit)="save()" class="form">
+      <label class="label" for="title">Titel</label>
+      <input id="title" type="text" formControlName="title" class="input" />
+
+      <label class="label" for="desc">Beschrijving</label>
+      <textarea id="desc" formControlName="description" class="textarea"></textarea>
+
+      <button class="btn" type="submit" [disabled]="saving">
+        {{ saving ? 'Bezig…' : 'Opslaan als draft' }}
+      </button>
+
+      <div class="err" *ngIf="error">{{ error }}</div>
+    </form>
+  </div>
+</section>

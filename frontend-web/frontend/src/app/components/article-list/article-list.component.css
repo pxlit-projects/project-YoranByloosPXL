@@ -1,0 +1,31 @@
+:host { display:block; }
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 16px 32px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.title {
+  margin: 0 0 8px;
+  padding: 8px 0;
+  color: #0b2b5a;
+  font-weight: 900;
+  border-bottom: 2px solid #e1e7f0;
+}
+
+.state { padding: 20px; color: #334155; }
+.state.error { color: #b85c5c; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 18px;
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}

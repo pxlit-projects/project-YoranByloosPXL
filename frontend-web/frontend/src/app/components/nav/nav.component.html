@@ -1,0 +1,39 @@
+<header class="nav">
+  <div class="nav__inner">
+    <!-- linkse zone: username wanneer ingelogd -->
+    <div class="nav__left" *ngIf="auth.username$ | async as uname">
+      <span class="user">Welkom, {{ uname }}</span>
+    </div>
+
+    <!-- logo centraal -->
+    <a class="brand" [routerLink]="['/']" aria-label="Home">
+      <img class="brand__logo" src="/pxl-news-logo.png" alt="PXL NWS logo" />
+    </a>
+
+    <!-- rechter iconen -->
+    <div class="nav__right">
+      <a
+        class="icon-btn"
+        [routerLink]="['/bookmarks']"
+        title="Bookmarks"
+        aria-label="Bookmarks"
+      >
+        <img class="icon" src="/bookmark-icon.png" alt="Bookmarks" />
+      </a>
+
+      <button
+        class="icon-btn"
+        type="button"
+        (click)="onUserClick()"
+        [title]="(auth.isLoggedIn$ | async) ? 'Logout' : 'Login'"
+        [attr.aria-label]="(auth.isLoggedIn$ | async) ? 'Logout' : 'Login'"
+      >
+        <img
+          class="icon"
+          [src]="(auth.isLoggedIn$ | async) ? '/logout-icon.png' : '/account-icon.png'"
+          [alt]="(auth.isLoggedIn$ | async) ? 'Logout' : 'Account'"
+        />
+      </button>
+    </div>
+  </div>
+</header>

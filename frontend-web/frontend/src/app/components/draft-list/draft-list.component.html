@@ -1,0 +1,19 @@
+<!-- src/app/pages/draft-list/draft-list.component.html -->
+<section class="wrap">
+  <header class="header">
+    <h1>Mijn drafts</h1>
+    <button class="btn-new" (click)="newArticle()">Nieuw artikel</button>
+  </header>
+
+  <div *ngIf="loading" class="state">Laden…</div>
+  <div *ngIf="!loading && error" class="state err">{{ error }}</div>
+
+  <div *ngIf="!loading && !error" class="grid">
+    <app-draft-card
+      *ngFor="let d of drafts"
+      [post]="d"
+      (publish)="handlePublish($event)"
+      (edit)="handleEdit($event)"
+    />
+  </div>
+</section>

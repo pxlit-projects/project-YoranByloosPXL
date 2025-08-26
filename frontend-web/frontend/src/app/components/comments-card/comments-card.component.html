@@ -1,0 +1,36 @@
+<!-- src/app/components/comment-card/comment-card.component.html -->
+<article class="cmt">
+  <header class="cmt__top">
+    <div class="cmt__meta">
+      <strong class="cmt__user">{{ comment.username }}</strong>
+      <span class="cmt__time">{{ comment.createdAt | date:'short' }}</span>
+    </div>
+
+    <div class="cmt__actions" *ngIf="isOwner">
+      <!-- Edit knop: eerste klik => edit-modus, tweede klik => opslaan -->
+      <button class="icon-btn" type="button" (click)="onEditClick()" [title]="editing ? 'Opslaan' : 'Bewerken'">
+        <img class="icon" src="/edit-image.png" alt="Bewerken" />
+      </button>
+      <button class="icon-btn" type="button" (click)="onDeleteClick()" title="Verwijderen">
+        <img class="icon" src="/bin-image.png" alt="Verwijderen" />
+      </button>
+    </div>
+  </header>
+
+  <div class="cmt__body" *ngIf="!editing; else editTpl">
+    {{ comment.content }}
+  </div>
+
+  <ng-template #editTpl>
+    <div class="cmt__edit">
+      <input
+        class="cmt__input"
+        [(ngModel)]="value"
+        type="text"
+        (keyup.enter)="onEditClick()"
+      />
+      <button class="btn btn--ghost" type="button" (click)="cancelEdit()">Annuleren</button>
+      <button class="btn" type="button" (click)="onEditClick()">Opslaan</button>
+    </div>
+  </ng-template>
+</article>

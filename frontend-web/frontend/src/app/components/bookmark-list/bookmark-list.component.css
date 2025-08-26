@@ -1,0 +1,17 @@
+.wrap {
+  max-width: 960px;
+  margin: 24px auto 40px;
+  padding: 0 16px;
+}
+
+.heading {
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: 900;
+  color: #0b2b5a;
+}
+
+.list { display: grid; gap: 14px; }
+
+.state { color: #6d7a8c; padding: 12px 0; }
+.state--err { color: #b85c5c; }

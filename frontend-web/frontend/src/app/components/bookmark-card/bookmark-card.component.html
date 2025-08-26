@@ -1,0 +1,16 @@
+<article class="card">
+  <div class="card__left">
+    <h3 class="title">{{ post.title }}</h3>
+    <div class="meta">
+      door {{ post.author }} • {{ post.createdAt | date: 'dd/MM/yyyy' }}
+    </div>
+  </div>
+
+  <div class="card__right">
+    <button class="icon-btn" (click)="removeBookmark()" [disabled]="busy" title="Verwijder bookmark" aria-label="Verwijder bookmark">
+      <img class="icon" src="/bookmark-fulll-image.png" alt="bookmark" />
+    </button>
+
+    <a class="cta" [routerLink]="['/posts', post.id]">Klik om alles te lezen</a>
+  </div>
+</article>

@@ -1,0 +1,19 @@
+<!-- src/app/components/draft/draft.component.html -->
+<article class="card">
+  <h3 class="title">{{ post.title }}</h3>
+
+  <p class="excerpt">
+    {{ post.content | slice:0:260 }}{{ post.content.length > 260 ? '...' : '' }}
+  </p>
+
+  <div class="meta">
+    <span>{{ post.createdAt | date: 'dd/MM/yyyy' }}</span>
+  </div>
+
+  <div class="actions">
+    <button class="btn btn--primary" (click)="onPublish()" [disabled]="publishing">
+      {{ publishing ? 'Bezig…' : 'Indienen' }}
+    </button>
+    <button class="btn" (click)="onEdit()">Bewerken</button>
+  </div>
+</article>

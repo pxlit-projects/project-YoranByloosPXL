@@ -1,0 +1,11 @@
+<nav class="admin-nav" *ngIf="auth.isEditor$ | async">
+  <div class="admin-nav__inner">
+    <span class="admin-badge">Admin</span>
+
+    <ul class="tabs">
+      <li><a routerLink="/admin/drafts" routerLinkActive="active">Mijn drafts</a></li>
+      <li><a routerLink="/admin/submissions" routerLinkActive="active">Mijn ingediende</a></li>
+      <li><a routerLink="/admin/review" routerLinkActive="active">Reviewen</a></li>
+    </ul>
+  </div>
+</nav>
