@@ -4309,3 +4309,57 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 22:41:05.441 INFO  comment-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_COMMENT-SERVICE/192.168.1.252:comment-service:8082 - registration status: 204
 22:41:05.531 INFO  comment-service [main] b.p.s.CommentServiceApplication - Started CommentServiceApplication in 4.014 seconds (process running for 4.433)
 22:46:05.268 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:51:05.283 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:52:16.591 INFO  comment-service [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:52:16.592 INFO  comment-service [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:52:16.594 INFO  comment-service [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+22:52:16.618 INFO  comment-service [http-nio-8082-exec-1] b.p.s.controller.CommentController - GetCommentsByPostId called postId=54
+22:52:16.694 INFO  comment-service [http-nio-8082-exec-1] b.p.services.services.CommentService - Fetched comments for postId=54 count=0
+22:52:20.080 INFO  comment-service [http-nio-8082-exec-3] b.p.s.controller.CommentController - AddComment requested by user=yoran for postId=54
+22:52:20.080 INFO  comment-service [http-nio-8082-exec-3] b.p.services.services.CommentService - Add comment requested by user=yoran postId=54
+22:54:46.204 INFO  comment-service [http-nio-8082-exec-4] b.p.s.controller.CommentController - GetCommentsByPostId called postId=55
+22:54:46.207 INFO  comment-service [http-nio-8082-exec-4] b.p.services.services.CommentService - Fetched comments for postId=55 count=0
+22:54:57.750 INFO  comment-service [http-nio-8082-exec-5] b.p.s.controller.CommentController - AddComment requested by user=tom for postId=55
+22:54:57.750 INFO  comment-service [http-nio-8082-exec-5] b.p.services.services.CommentService - Add comment requested by user=tom postId=55
+22:55:02.670 INFO  comment-service [http-nio-8082-exec-6] b.p.s.controller.CommentController - UpdateComment requested commentId=203 by user=tom
+22:55:02.670 INFO  comment-service [http-nio-8082-exec-6] b.p.services.services.CommentService - Update comment requested commentId=203 by user=tom
+22:55:09.548 INFO  comment-service [http-nio-8082-exec-7] b.p.s.controller.CommentController - AddComment requested by user=tom for postId=55
+22:55:09.549 INFO  comment-service [http-nio-8082-exec-7] b.p.services.services.CommentService - Add comment requested by user=tom postId=55
+22:55:11.616 INFO  comment-service [http-nio-8082-exec-2] b.p.s.controller.CommentController - DeleteComment requested commentId=203 by user=tom
+22:55:11.616 INFO  comment-service [http-nio-8082-exec-2] b.p.services.services.CommentService - Delete comment requested commentId=203 by user=tom
+22:55:22.783 INFO  comment-service [http-nio-8082-exec-9] b.p.s.controller.CommentController - GetCommentsByPostId called postId=55
+22:55:22.787 INFO  comment-service [http-nio-8082-exec-9] b.p.services.services.CommentService - Fetched comments for postId=55 count=1
+22:56:05.295 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:01:05.306 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:06:05.321 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:11:05.327 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:16:05.338 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:16:54.048 INFO  comment-service [http-nio-8082-exec-1] b.p.s.controller.CommentController - GetCommentsByPostId called postId=53
+23:16:54.067 INFO  comment-service [http-nio-8082-exec-1] b.p.services.services.CommentService - Fetched comments for postId=53 count=0
+23:18:23.804 INFO  comment-service [http-nio-8082-exec-8] b.p.s.controller.CommentController - GetCommentsByPostId called postId=1
+23:18:23.812 INFO  comment-service [http-nio-8082-exec-8] b.p.services.services.CommentService - Fetched comments for postId=1 count=2
+23:18:57.326 INFO  comment-service [http-nio-8082-exec-4] b.p.s.controller.CommentController - GetCommentsByPostId called postId=1
+23:18:57.329 INFO  comment-service [http-nio-8082-exec-4] b.p.services.services.CommentService - Fetched comments for postId=1 count=2
+23:21:05.345 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:26:05.358 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:31:05.364 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:36:05.374 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:41:05.382 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:46:05.385 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:51:05.391 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:56:05.402 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:01:05.411 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:06:05.423 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:11:05.431 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:16:05.442 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:21:05.453 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:26:05.463 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:31:05.469 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:36:05.478 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:41:05.488 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:46:05.498 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:51:05.508 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:56:05.511 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:01:05.527 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:06:05.542 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:11:05.550 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

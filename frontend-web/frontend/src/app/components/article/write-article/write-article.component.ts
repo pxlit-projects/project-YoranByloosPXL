@@ -42,8 +42,6 @@ export class WriteArticleComponent {
       await this.posts.createDraft(title!, description!);
       this.successMsg = 'Draft opgeslagen.';
       this.form.markAsPristine();
-      // eventueel naar "Mijn drafts"
-      // await this.router.navigate(['/admin/drafts']);
     } catch (e) {
       this.errorMsg = 'Opslaan mislukt. Probeer later opnieuw.';
     } finally {

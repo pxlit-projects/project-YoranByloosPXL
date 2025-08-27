@@ -1,4 +1,3 @@
-<!-- src/app/admin/submissions/submissions-page.component.html -->
 <section class="wrap">
   <h1>Mijn ingediende</h1>
 
@@ -6,7 +5,6 @@
   <div class="state error" *ngIf="!loading && error">{{ error }}</div>
 
   <ng-container *ngIf="!loading && !error">
-    <!-- Goedgekeurd -->
     <h2 class="section-title ok">Goedgekeurd</h2>
     <div class="grid">
       <article class="card ok" *ngFor="let p of grouped.accepted">
@@ -22,7 +20,6 @@
       <p class="placeholder" *ngIf="grouped.accepted.length === 0">Geen goedgekeurde artikelen.</p>
     </div>
 
-    <!-- Afgewezen -->
     <h2 class="section-title bad">Afgewezen</h2>
     <div class="grid">
       <article class="card bad" *ngFor="let p of grouped.rejected">
@@ -38,7 +35,6 @@
       <p class="placeholder" *ngIf="grouped.rejected.length === 0">Geen afgewezen artikelen.</p>
     </div>
 
-    <!-- Ingediend -->
     <h2 class="section-title info">Ingediend</h2>
     <div class="grid">
       <article class="card info" *ngFor="let p of grouped.submitted">

@@ -1,4 +1,3 @@
-// src/app/pages/update-article/update-article.component.ts
 import { Component, OnInit, inject } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -38,7 +37,6 @@ export class UpdateArticleComponent implements OnInit {
 
       this.form.patchValue({
         title: post.title ?? '',
-        // jouw Post heeft 'content', geen 'description'
         description: post.content ?? ''
       });
     } catch {

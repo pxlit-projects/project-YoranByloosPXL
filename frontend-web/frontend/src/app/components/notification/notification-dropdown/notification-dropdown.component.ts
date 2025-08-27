@@ -32,7 +32,7 @@ export class NotificationDropdownComponent {
     this.error.set('');
     try {
       const user = await firstValueFrom(this.auth.username$);
-      if (!user) return; // niet ingelogd
+      if (!user) return;
       const list = await firstValueFrom(this.api.getForUser(user));
       this.items.set(list);
     } catch {
@@ -49,11 +49,9 @@ export class NotificationDropdownComponent {
       await firstValueFrom(this.api.deleteOne(n.id, user));
       this.items.update(arr => arr.filter(x => x.id !== n.id));
     } catch {
-      // laat error stil
     }
   }
 
-  // klik buiten sluit dropdown
   @HostListener('document:click', ['$event'])
   onDocClick(ev: MouseEvent) {
     const target = ev.target as HTMLElement;

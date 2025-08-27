@@ -1,4 +1,3 @@
-// src/app/pages/draft-list/draft-list.component.ts
 import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common';
@@ -40,7 +39,6 @@ export class DraftListComponent implements OnInit {
   async handlePublish(post: Post) {
     try {
       await this.postService.submitDraft(post.id);
-      // verwijder uit lijst (of reload)
       this.drafts = this.drafts.filter(d => d.id !== post.id);
     } catch {
       alert('Indienen mislukte.');
@@ -48,7 +46,6 @@ export class DraftListComponent implements OnInit {
   }
 
   handleEdit(post: Post) {
-    // navigeer met state zodat we geen aparte GET-by-id hoeven
     this.router.navigate(['/admin/update', post.id], { state: { post } });
   }
 

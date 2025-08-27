@@ -1,4 +1,3 @@
-// src/app/admin/submissions/submissions-page.component.ts
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { PostService } from '../../services/post/post.service';

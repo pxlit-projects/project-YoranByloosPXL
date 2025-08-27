@@ -5,43 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f721f22-d734-426b-b959-e4e005ba4e83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/java/be/pxl/services/TestBootApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/java/be/pxl/services/controller/BookmarkControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/java/be/pxl/services/repository/BookmarkRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/java/be/pxl/services/services/BookmarkServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/test/java/be/pxl/services/TestBootApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/test/java/be/pxl/services/controller/CommentControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/test/java/be/pxl/services/repository/CommentRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/test/java/be/pxl/services/services/CommentServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/notification-service.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/TestBootApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/controller/NotificationControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/messaging/NotificationListenerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/repository/NotificationRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/services/NotificationServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/test/java/be/pxl/services/TestBootApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/test/java/be/pxl/services/controller/ReviewControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/test/java/be/pxl/services/repository/ReviewRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/test/java/be/pxl/services/services/ReviewServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/bookmark-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bookmark-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/domain/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/domain/Bookmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/post-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/post-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/domain/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/domain/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/post-service/logs/post-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/logs/post-service/current.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/post-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/review-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/bookmark-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/bookmark-service/current.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/comment-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/comment-service/current.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/notification-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/notification-service/current.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/post-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/post-service/current.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/review-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/review-service/current.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +274,7 @@
       <workItem from="1756206534784" duration="12714000" />
       <workItem from="1756235290006" duration="16571000" />
       <workItem from="1756309627502" duration="3968000" />
-      <workItem from="1756315210051" duration="1673000" />
+      <workItem from="1756315210051" duration="2830000" />
     </task>
     <servers />
   </component>

@@ -26,7 +26,6 @@ export class NavComponent {
     } else {
       this.auth.logout();
       this.router.navigate(['/']);
-      // eenvoudige refresh zodat nav/username direct resetten
       window.location.reload();
     }
   }

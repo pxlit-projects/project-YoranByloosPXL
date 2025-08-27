@@ -1,9 +1,9 @@
-// src/app/components/comment-card/comment-card.component.ts
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output, inject, OnChanges } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Comment } from '../../../models/comment.model';
 import { CommentService } from '../../../services/comment/comment.service';
+import { BookmarkCardComponent } from '../../bookmark/bookmark-card/bookmark-card.component';
 
 @Component({
   selector: 'app-comments-card',
@@ -35,13 +35,11 @@ export class CommentsCardComponent implements OnChanges {
   async onEditClick() {
     if (!this.isOwner) return;
 
-    // 1ste klik => naar edit-modus
     if (!this.editing) {
       this.editing = true;
       return;
     }
 
-    // 2de klik => opslaan
     const saved = await this.commentService.update(this.comment.id!, this.value);
     this.editing = false;
     this.updated.emit(saved);

@@ -5962,3 +5962,73 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 22:41:21.882 INFO  review-service [DiscoveryClient-CacheRefreshExecutor-0] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
 22:41:21.902 INFO  review-service [DiscoveryClient-CacheRefreshExecutor-0] c.netflix.discovery.DiscoveryClient - The response status is 200
 22:45:51.769 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:50:51.776 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:52:13.038 INFO  review-service [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:52:13.038 INFO  review-service [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:52:13.041 INFO  review-service [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+22:52:13.069 INFO  review-service [http-nio-8081-exec-1] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=yoran
+22:52:13.146 INFO  review-service [http-nio-8081-exec-1] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=yoran count=0
+22:52:14.432 INFO  review-service [http-nio-8081-exec-2] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=yoran
+22:52:14.439 INFO  review-service [http-nio-8081-exec-2] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=yoran count=0
+22:52:23.199 INFO  review-service [http-nio-8081-exec-3] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=yoran
+22:52:23.206 INFO  review-service [http-nio-8081-exec-3] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=yoran count=0
+22:52:45.812 INFO  review-service [http-nio-8081-exec-4] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=yoran
+22:52:45.818 INFO  review-service [http-nio-8081-exec-4] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=yoran count=0
+22:52:59.381 INFO  review-service [http-nio-8081-exec-5] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+22:52:59.390 INFO  review-service [http-nio-8081-exec-5] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=0
+22:53:14.195 INFO  review-service [http-nio-8081-exec-6] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+22:53:14.205 INFO  review-service [http-nio-8081-exec-6] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+22:53:25.420 INFO  review-service [http-nio-8081-exec-7] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+22:53:25.428 INFO  review-service [http-nio-8081-exec-7] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+22:53:28.787 INFO  review-service [http-nio-8081-exec-10] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+22:53:28.793 INFO  review-service [http-nio-8081-exec-10] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+22:55:39.561 INFO  review-service [http-nio-8081-exec-9] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=yoran
+22:55:39.569 INFO  review-service [http-nio-8081-exec-9] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=yoran count=0
+22:55:51.782 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:00:51.796 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:02:22.281 INFO  review-service [http-nio-8081-exec-2] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=yoran
+23:02:22.288 INFO  review-service [http-nio-8081-exec-2] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=yoran count=0
+23:02:49.775 INFO  review-service [http-nio-8081-exec-3] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=yoran
+23:02:49.780 INFO  review-service [http-nio-8081-exec-3] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=yoran count=0
+23:03:54.321 INFO  review-service [http-nio-8081-exec-5] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+23:03:54.330 INFO  review-service [http-nio-8081-exec-5] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+23:03:56.309 INFO  review-service [http-nio-8081-exec-6] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+23:03:56.315 INFO  review-service [http-nio-8081-exec-6] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+23:03:59.259 INFO  review-service [http-nio-8081-exec-7] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+23:03:59.266 INFO  review-service [http-nio-8081-exec-7] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+23:05:13.161 INFO  review-service [http-nio-8081-exec-8] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+23:05:13.169 INFO  review-service [http-nio-8081-exec-8] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+23:05:14.378 INFO  review-service [http-nio-8081-exec-9] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+23:05:14.385 INFO  review-service [http-nio-8081-exec-9] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+23:05:32.834 INFO  review-service [http-nio-8081-exec-1] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+23:05:32.840 INFO  review-service [http-nio-8081-exec-1] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+23:05:51.798 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:10:51.803 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:15:51.818 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:17:06.823 INFO  review-service [http-nio-8081-exec-3] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+23:17:06.835 INFO  review-service [http-nio-8081-exec-3] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+23:20:51.821 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:25:51.834 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:30:51.846 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:35:51.855 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:40:51.860 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:45:51.873 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:50:51.886 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:55:51.888 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:00:51.895 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:05:51.908 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:10:51.916 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:15:51.932 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:20:51.939 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:25:51.946 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:30:51.950 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:35:51.964 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:40:51.972 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:42:13.234 INFO  review-service [http-nio-8081-exec-5] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+00:42:13.376 INFO  review-service [http-nio-8081-exec-5] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+00:45:51.981 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:50:51.983 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:55:51.997 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:00:52.010 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:05:52.018 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:10:52.027 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

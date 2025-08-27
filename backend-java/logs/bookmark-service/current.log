@@ -3486,3 +3486,60 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 22:41:17.426 INFO  bookmark-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOOKMARK-SERVICE/LAPTOP-BARRY.mshome.net:bookmark-service:8083 - registration status: 204
 22:41:17.429 INFO  bookmark-service [main] b.p.s.BookmarkServiceApplication - Started BookmarkServiceApplication in 4.475 seconds (process running for 4.952)
 22:46:17.262 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:51:17.268 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:52:07.545 INFO  bookmark-service [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:52:07.545 INFO  bookmark-service [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:52:07.547 INFO  bookmark-service [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+22:52:07.576 INFO  bookmark-service [http-nio-8083-exec-1] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=yoran
+22:52:07.642 INFO  bookmark-service [http-nio-8083-exec-1] b.p.s.services.BookmarkService - GetBookmarkedPosts user=yoran count=3
+22:52:16.503 INFO  bookmark-service [http-nio-8083-exec-2] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=yoran
+22:52:16.506 INFO  bookmark-service [http-nio-8083-exec-2] b.p.s.services.BookmarkService - GetBookmarkedPosts user=yoran count=3
+22:53:50.347 INFO  bookmark-service [http-nio-8083-exec-8] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=admin
+22:53:50.351 INFO  bookmark-service [http-nio-8083-exec-8] b.p.s.services.BookmarkService - GetBookmarkedPosts user=admin count=2
+22:53:53.226 INFO  bookmark-service [http-nio-8083-exec-5] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=yoran
+22:53:53.230 INFO  bookmark-service [http-nio-8083-exec-5] b.p.s.services.BookmarkService - GetBookmarkedPosts user=yoran count=3
+22:54:00.781 INFO  bookmark-service [http-nio-8083-exec-6] b.p.s.controller.BookmarkController - RemoveBookmark requested by user=admin postId=1
+22:54:00.786 INFO  bookmark-service [http-nio-8083-exec-6] b.p.s.services.BookmarkService - RemoveBookmark requested user=admin postId=1
+22:54:46.189 INFO  bookmark-service [http-nio-8083-exec-7] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=tom
+22:54:46.192 INFO  bookmark-service [http-nio-8083-exec-7] b.p.s.services.BookmarkService - GetBookmarkedPosts user=tom count=0
+22:55:37.382 INFO  bookmark-service [http-nio-8083-exec-3] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=yoran
+22:55:37.386 INFO  bookmark-service [http-nio-8083-exec-3] b.p.s.services.BookmarkService - GetBookmarkedPosts user=yoran count=3
+22:56:17.275 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:01:17.285 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:05:26.750 INFO  bookmark-service [http-nio-8083-exec-10] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=admin
+23:05:26.754 INFO  bookmark-service [http-nio-8083-exec-10] b.p.s.services.BookmarkService - GetBookmarkedPosts user=admin count=1
+23:06:17.296 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:11:17.311 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:16:17.322 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:16:53.995 INFO  bookmark-service [http-nio-8083-exec-2] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=admin
+23:16:54.003 INFO  bookmark-service [http-nio-8083-exec-2] b.p.s.services.BookmarkService - GetBookmarkedPosts user=admin count=1
+23:17:00.763 INFO  bookmark-service [http-nio-8083-exec-4] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=admin
+23:17:00.767 INFO  bookmark-service [http-nio-8083-exec-4] b.p.s.services.BookmarkService - GetBookmarkedPosts user=admin count=1
+23:18:23.777 INFO  bookmark-service [http-nio-8083-exec-5] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=admin
+23:18:23.781 INFO  bookmark-service [http-nio-8083-exec-5] b.p.s.services.BookmarkService - GetBookmarkedPosts user=admin count=1
+23:18:57.307 INFO  bookmark-service [http-nio-8083-exec-6] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=admin
+23:18:57.310 INFO  bookmark-service [http-nio-8083-exec-6] b.p.s.services.BookmarkService - GetBookmarkedPosts user=admin count=1
+23:21:17.326 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:26:17.332 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:31:17.337 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:36:17.351 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:41:17.366 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:46:17.381 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:51:17.388 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:56:17.400 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:01:17.409 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:06:17.420 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:11:17.435 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:16:17.438 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:21:17.444 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:26:17.447 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:31:17.455 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:36:17.463 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:41:17.479 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:46:17.491 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:51:17.495 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:56:17.502 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:01:17.505 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:04:37.565 WARN  bookmark-service [http-nio-8083-exec-3] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'username' for method parameter type String is not present]
+01:06:17.517 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:11:17.532 INFO  bookmark-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

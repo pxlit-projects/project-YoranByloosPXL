@@ -1,18 +1,14 @@
 <header class="nav">
   <div class="nav__inner">
-    <!-- linkse zone: username wanneer ingelogd -->
     <div class="nav__left" *ngIf="auth.username$ | async as uname">
       <span class="user">Welkom, {{ uname }}</span>
     </div>
 
-    <!-- logo centraal -->
     <a class="brand" [routerLink]="['/']" aria-label="Home">
       <img class="brand__logo" src="/pxl-news-logo.png" alt="PXL NWS logo" />
     </a>
 
-    <!-- rechter iconen -->
     <div class="nav__right">
-      <!-- Notificaties (alleen als ingelogd) -->
       <app-notification-dropdown *ngIf="auth.isLoggedIn$ | async"></app-notification-dropdown>
 
       <a

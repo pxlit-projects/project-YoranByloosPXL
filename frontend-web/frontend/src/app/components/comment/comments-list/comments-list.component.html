@@ -1,7 +1,6 @@
 <section class="panel comments">
   <h3 class="panel__title">Comments</h3>
 
-  <!-- Nieuwe comment -->
   <form class="new" (ngSubmit)="add()" #f="ngForm">
     <input
       class="input"
@@ -12,7 +11,7 @@
     />
 
     <div class="actions">
-      <button class="btn" type="submit" [disabled]="adding || !newContent?.trim()">
+      <button class="btn" type="submit" [disabled]="adding || !newContent.trim()">
         {{ adding ? 'Plaatsen…' : 'Plaatsen' }}
       </button>
       <span class="hint" *ngIf="!newContent?.trim()">Voer eerst tekst in.</span>
@@ -21,7 +20,6 @@
 
   <div class="divider"></div>
 
-  <!-- Lijst -->
   <ng-container *ngIf="comments?.length; else empty">
     <app-comments-card
       *ngFor="let c of comments"

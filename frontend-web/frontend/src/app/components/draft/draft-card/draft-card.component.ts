@@ -1,4 +1,3 @@
-// src/app/components/draft/draft.component.ts
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Post } from '../../../models/post.model';
 import { DatePipe, SlicePipe } from '@angular/common';
