@@ -4256,3 +4256,56 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:108)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 15:31:50.120 INFO  comment-service [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+22:41:02.219 INFO  comment-service [main] b.p.s.CommentServiceApplication - Starting CommentServiceApplication using Java 17.0.13 with PID 32136 (C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\comment-service\target\classes started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java)
+22:41:02.220 DEBUG comment-service [main] b.p.s.CommentServiceApplication - Running with Spring Boot v3.1.0, Spring v6.0.9
+22:41:02.220 INFO  comment-service [main] b.p.s.CommentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+22:41:02.246 INFO  comment-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+22:41:02.246 INFO  comment-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=comment-service, profiles=[default], label=null, version=null, state=null
+22:41:02.663 INFO  comment-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:41:02.760 INFO  comment-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interfaces.
+22:41:02.915 INFO  comment-service [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=9e7cf56a-acae-3550-a4c3-408057d1ec24
+22:41:03.146 INFO  comment-service [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+22:41:03.153 INFO  comment-service [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+22:41:03.153 INFO  comment-service [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:41:03.154 INFO  comment-service [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+22:41:03.227 INFO  comment-service [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:41:03.228 INFO  comment-service [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 980 ms
+22:41:03.326 INFO  comment-service [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:41:03.377 INFO  comment-service [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+22:41:03.379 INFO  comment-service [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22:41:03.469 INFO  comment-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22:41:03.547 INFO  comment-service [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:41:03.557 INFO  comment-service [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:41:03.656 INFO  comment-service [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22368ddc
+22:41:03.657 INFO  comment-service [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:41:03.690 INFO  comment-service [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.40
+22:41:03.807 INFO  comment-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22:41:04.206 INFO  comment-service [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:41:04.274 INFO  comment-service [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:41:04.492 WARN  comment-service [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:41:05.039 INFO  comment-service [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+22:41:05.169 WARN  comment-service [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+22:41:05.203 WARN  comment-service [main] o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+22:41:05.220 INFO  comment-service [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+22:41:05.247 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+22:41:05.250 INFO  comment-service [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:41:05.267 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+22:41:05.267 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+22:41:05.267 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+22:41:05.267 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+22:41:05.267 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+22:41:05.267 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+22:41:05.267 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+22:41:05.402 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+22:41:05.404 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+22:41:05.406 INFO  comment-service [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+22:41:05.409 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1756327265408 with initial instances count: 3
+22:41:05.410 INFO  comment-service [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application COMMENT-SERVICE with eureka with status UP
+22:41:05.411 INFO  comment-service [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1756327265411, current=UP, previous=STARTING]
+22:41:05.412 INFO  comment-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_COMMENT-SERVICE/192.168.1.252:comment-service:8082: registering service...
+22:41:05.412 INFO  comment-service [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+22:41:05.428 INFO  comment-service [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+22:41:05.428 INFO  comment-service [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+22:41:05.441 INFO  comment-service [DiscoveryClient-InstanceInfoReplicator-0] c.netflix.discovery.DiscoveryClient - DiscoveryClient_COMMENT-SERVICE/192.168.1.252:comment-service:8082 - registration status: 204
+22:41:05.531 INFO  comment-service [main] b.p.s.CommentServiceApplication - Started CommentServiceApplication in 4.014 seconds (process running for 4.433)
+22:46:05.268 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

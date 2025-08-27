@@ -1,0 +1,49 @@
+18:02:17.885 INFO  bookmark-service [main] b.p.s.c.BookmarkControllerTest - Starting BookmarkControllerTest using Java 22.0.2 with PID 3836 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\bookmark-service)
+18:02:17.887 DEBUG bookmark-service [main] b.p.s.c.BookmarkControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+18:02:17.887 INFO  bookmark-service [main] b.p.s.c.BookmarkControllerTest - No active profile set, falling back to 1 default profile: "default"
+18:02:17.909 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+18:02:17.909 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt. Will be trying the next url if available
+18:02:17.910 WARN  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@47ec7422 uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt
+18:02:17.910 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+18:02:17.910 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt. Will be trying the next url if available
+18:02:17.910 WARN  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@2d000e80 uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt
+18:02:17.910 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+18:02:17.910 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt. Will be trying the next url if available
+18:02:17.910 WARN  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@20e6c4dc uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt
+18:02:19.036 INFO  bookmark-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+18:02:19.036 INFO  bookmark-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+18:02:19.037 INFO  bookmark-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+18:02:19.059 INFO  bookmark-service [main] b.p.s.c.BookmarkControllerTest - Started BookmarkControllerTest in 2.127 seconds (process running for 2.91)
+18:02:19.115 INFO  bookmark-service [main] b.p.s.controller.BookmarkController - RemoveBookmark requested by user=ann postId=7
+18:02:19.162 INFO  bookmark-service [main] b.p.s.controller.BookmarkController - AddBookmark requested by user=ann postId=9
+18:02:19.224 INFO  bookmark-service [main] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=ann
+18:02:28.629 INFO  bookmark-service [main] b.p.s.r.BookmarkRepositoryTest - Starting BookmarkRepositoryTest using Java 22.0.2 with PID 31104 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\bookmark-service)
+18:02:28.630 DEBUG bookmark-service [main] b.p.s.r.BookmarkRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+18:02:28.631 INFO  bookmark-service [main] b.p.s.r.BookmarkRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+18:02:28.640 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+18:02:28.640 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt. Will be trying the next url if available
+18:02:28.640 WARN  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@1d96d872 uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt
+18:02:28.640 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+18:02:28.640 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt. Will be trying the next url if available
+18:02:28.640 WARN  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@a20b94b uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt
+18:02:28.640 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+18:02:28.640 INFO  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt. Will be trying the next url if available
+18:02:28.640 WARN  bookmark-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@14f3c6fc uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/bookmark-service/default": Connection refused: getsockopt
+18:02:28.875 INFO  bookmark-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:02:29.031 INFO  bookmark-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 150 ms. Found 2 JPA repository interfaces.
+18:02:29.063 INFO  bookmark-service [main] o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+18:02:29.204 INFO  bookmark-service [main] o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:55713737-cd78-4f39-a945-e1a443d574c0;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+18:02:29.435 INFO  bookmark-service [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:02:29.504 INFO  bookmark-service [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+18:02:29.509 INFO  bookmark-service [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+18:02:29.695 INFO  bookmark-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+18:02:29.864 INFO  bookmark-service [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:02:29.911 INFO  bookmark-service [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+18:02:30.123 INFO  bookmark-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+18:02:30.565 INFO  bookmark-service [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:02:30.595 INFO  bookmark-service [main] o.h.t.s.i.e.GenerationTargetToDatabase - HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+18:02:30.597 INFO  bookmark-service [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:02:30.966 INFO  bookmark-service [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+18:02:31.567 INFO  bookmark-service [main] b.p.s.r.BookmarkRepositoryTest - Started BookmarkRepositoryTest in 3.823 seconds (process running for 4.578)
+18:02:31.868 INFO  bookmark-service [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:02:31.869 INFO  bookmark-service [SpringApplicationShutdownHook] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'

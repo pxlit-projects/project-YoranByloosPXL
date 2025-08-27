@@ -5,47 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f721f22-d734-426b-b959-e4e005ba4e83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/NotificationServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/config/RabbitConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/controller/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/domain/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/messaging/NotificationListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/repository/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/services/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/config/RabbitConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/messaging/NotificationPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/messaging/PostModerationEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/post-service/src/test/java/be/pxl/services/controller/PostControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/post-service/src/test/java/be/pxl/services/services/PostServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/post-service/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/java/be/pxl/services/TestBootApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/java/be/pxl/services/controller/BookmarkControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/java/be/pxl/services/repository/BookmarkRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/java/be/pxl/services/services/BookmarkServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/test/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/test/java/be/pxl/services/TestBootApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/test/java/be/pxl/services/controller/CommentControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/test/java/be/pxl/services/repository/CommentRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/test/java/be/pxl/services/services/CommentServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/comment-service/src/test/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/notification-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/TestBootApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/controller/NotificationControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/messaging/NotificationListenerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/repository/NotificationRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/java/be/pxl/services/services/NotificationServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/notification-service/src/test/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/test/java/be/pxl/services/TestBootApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/test/java/be/pxl/services/controller/ReviewControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/test/java/be/pxl/services/repository/ReviewRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/test/java/be/pxl/services/services/ReviewServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/review-service/src/test/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/bookmark-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bookmark-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/bookmark-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/bookmark-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/gateway-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/domain/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bookmark-service/src/main/java/be/pxl/services/domain/Bookmark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/post-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/post-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/review-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config-service/src/main/resources/config/review-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/domain/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/java/be/pxl/services/domain/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/notification-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/post-service/logs/post-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/logs/post-service/current.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/post-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/domain/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/post-service/src/main/java/be/pxl/services/services/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/review-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/review-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/bookmark-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/bookmark-service/current.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/comment-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/comment-service/current.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/post-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/post-service/current.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/review-service/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/review-service/current.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend-web/frontend/src/app/components/article-card/article-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend-web/frontend/src/app/components/article-card/article-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend-web/frontend/src/app/components/draft-list/draft-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend-web/frontend/src/app/components/draft-list/draft-list.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend-web/frontend/src/app/components/nav/nav.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend-web/frontend/src/app/components/nav/nav.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend-web/frontend/src/app/components/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend-web/frontend/src/app/components/nav/nav.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend-web/frontend/src/app/components/nav/nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend-web/frontend/src/app/components/nav/nav.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,47 +71,69 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.PostControllerTest.executor": "Run",
-    "JUnit.PostServiceTest.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BookmarkServiceApplication.executor": "Run",
-    "Spring Boot.CommentServiceApplication.executor": "Run",
-    "Spring Boot.ConfigServiceApplication.executor": "Run",
-    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
-    "Spring Boot.GatewayServiceApplication.executor": "Run",
-    "Spring Boot.NotificationServiceApplication.executor": "Run",
-    "Spring Boot.PostServiceApplication.executor": "Run",
-    "Spring Boot.ReviewServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/yoran/Java-Project/project-YoranByloosPXL/backend-java/Backend/notification-service/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.All in Backend (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Backend.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in backend-java (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in backend-java.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in post-service (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in review-service.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.BookmarkControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookmarkRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookmarkServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CommentControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CommentControllerTest.updateComment_updatesAndReturnsJson.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CommentRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CommentServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotificationControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotificationListenerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotificationRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotificationServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostServiceTest.getPublishedPosts_delegatesToRepo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReviewControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReviewRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReviewServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BookmarkServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CommentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NotificationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PostServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ReviewServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yoran/Java-Project/project-YoranByloosPXL/backend-java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -124,6 +142,9 @@
       <recent name="C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\notification-service\src\main\resources" />
       <recent name="C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service\src\main\resources" />
       <recent name="C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\comment-service\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.pxl.services" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -136,33 +157,43 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PostServiceTest">
-    <configuration name="PostControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="post-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.pxl.services.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.pxl.services.controller" />
-      <option name="MAIN_CLASS_NAME" value="be.pxl.services.controller.PostControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+  <component name="RunManager" selected="JUnit.All in backend-java (1)">
+    <configuration name="All in Backend (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Backend" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="post-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.pxl.services.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.pxl.services.services" />
-      <option name="MAIN_CLASS_NAME" value="be.pxl.services.services.PostServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="All in Backend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Backend" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in backend-java (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in backend-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in review-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="review-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,10 +254,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.All in Backend" />
+      <item itemvalue="JUnit.All in Backend (1)" />
+      <item itemvalue="JUnit.All in backend-java" />
+      <item itemvalue="JUnit.All in backend-java (1)" />
+      <item itemvalue="JUnit.All in review-service" />
+      <item itemvalue="Spring Boot.ConfigServiceApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayServiceApplication" />
+      <item itemvalue="Spring Boot.PostServiceApplication" />
+      <item itemvalue="Spring Boot.ReviewServiceApplication" />
+      <item itemvalue="Spring Boot.CommentServiceApplication" />
+      <item itemvalue="Spring Boot.BookmarkServiceApplication" />
+      <item itemvalue="Spring Boot.NotificationServiceApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PostServiceTest" />
-        <item itemvalue="JUnit.PostControllerTest" />
+        <item itemvalue="JUnit.All in backend-java (1)" />
+        <item itemvalue="JUnit.All in backend-java" />
+        <item itemvalue="JUnit.All in Backend (1)" />
+        <item itemvalue="JUnit.All in Backend" />
+        <item itemvalue="JUnit.All in review-service" />
       </list>
     </recent_temporary>
   </component>
@@ -254,15 +303,35 @@
       <workItem from="1755784070573" duration="9265000" />
       <workItem from="1756063983588" duration="16410000" />
       <workItem from="1756206534784" duration="12714000" />
-      <workItem from="1756235290006" duration="11973000" />
+      <workItem from="1756235290006" duration="16571000" />
+      <workItem from="1756309627502" duration="3968000" />
+      <workItem from="1756315210051" duration="1673000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/backend_java$All_in_post_service__1_.ic" NAME="All in post-service (1) Coverage Results" MODIFIED="1756314548529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/backend_java$All_in_backend_java__1_.ic" NAME="All in backend-java (1) Coverage Results" MODIFIED="1756314929512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/backend_java$All_in_Backend.ic" NAME="All in Backend Coverage Results" MODIFIED="1756314484257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/backend_java$All_in_review_service.ic" NAME="All in review-service Coverage Results" MODIFIED="1756314600939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/backend_java$All_in_backend_java.ic" NAME="All in backend-java Coverage Results" MODIFIED="1756314919571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

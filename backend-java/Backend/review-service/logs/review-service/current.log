@@ -1,0 +1,111 @@
+17:10:32.463 INFO  review-service [main] b.p.s.c.ReviewControllerTest - Starting ReviewControllerTest using Java 17.0.13 with PID 20136 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service)
+17:10:32.464 DEBUG review-service [main] b.p.s.c.ReviewControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+17:10:32.465 INFO  review-service [main] b.p.s.c.ReviewControllerTest - No active profile set, falling back to 1 default profile: "default"
+17:10:32.481 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+17:10:32.481 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt. Will be trying the next url if available
+17:10:32.481 WARN  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@27b000f7 uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt
+17:10:33.846 INFO  review-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+17:10:33.846 INFO  review-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+17:10:33.847 INFO  review-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+17:10:33.873 INFO  review-service [main] b.p.s.c.ReviewControllerTest - Started ReviewControllerTest in 2.508 seconds (process running for 3.336)
+17:11:02.544 INFO  review-service [main] b.p.s.r.ReviewRepositoryTest - Starting ReviewRepositoryTest using Java 17.0.13 with PID 32492 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service)
+17:11:02.546 DEBUG review-service [main] b.p.s.r.ReviewRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+17:11:02.547 INFO  review-service [main] b.p.s.r.ReviewRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+17:11:02.556 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+17:11:02.556 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt. Will be trying the next url if available
+17:11:02.556 WARN  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@56f71edb uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt
+17:11:02.795 INFO  review-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:11:02.951 INFO  review-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 149 ms. Found 2 JPA repository interfaces.
+17:11:02.995 INFO  review-service [main] o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+17:11:03.163 INFO  review-service [main] o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:0dfbfe14-e9ff-4e7f-a2b8-1e37be5976a8;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+17:11:03.394 INFO  review-service [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:11:03.454 INFO  review-service [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+17:11:03.456 INFO  review-service [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+17:11:03.606 INFO  review-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+17:11:03.721 INFO  review-service [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+17:11:03.772 INFO  review-service [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+17:11:03.998 INFO  review-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+17:11:04.510 INFO  review-service [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:11:04.546 INFO  review-service [main] o.h.t.s.i.e.GenerationTargetToDatabase - HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+17:11:04.548 INFO  review-service [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:11:04.907 INFO  review-service [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+17:11:05.557 INFO  review-service [main] b.p.s.r.ReviewRepositoryTest - Started ReviewRepositoryTest in 3.85 seconds (process running for 4.611)
+17:11:06.023 INFO  review-service [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+17:11:06.023 INFO  review-service [SpringApplicationShutdownHook] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+17:11:47.641 INFO  review-service [main] b.p.s.c.ReviewControllerTest - Starting ReviewControllerTest using Java 17.0.13 with PID 28956 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service)
+17:11:47.643 DEBUG review-service [main] b.p.s.c.ReviewControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+17:11:47.644 INFO  review-service [main] b.p.s.c.ReviewControllerTest - No active profile set, falling back to 1 default profile: "default"
+17:11:47.658 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+17:11:47.658 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt. Will be trying the next url if available
+17:11:47.658 WARN  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@27b000f7 uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt
+17:11:48.885 INFO  review-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+17:11:48.885 INFO  review-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+17:11:48.887 INFO  review-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+17:11:48.915 INFO  review-service [main] b.p.s.c.ReviewControllerTest - Started ReviewControllerTest in 2.149 seconds (process running for 2.945)
+17:15:03.021 INFO  review-service [main] b.p.s.c.ReviewControllerTest - Starting ReviewControllerTest using Java 17.0.13 with PID 5796 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service)
+17:15:03.023 DEBUG review-service [main] b.p.s.c.ReviewControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+17:15:03.024 INFO  review-service [main] b.p.s.c.ReviewControllerTest - No active profile set, falling back to 1 default profile: "default"
+17:15:03.044 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+17:15:03.044 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt. Will be trying the next url if available
+17:15:03.044 WARN  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@2bc9a775 uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt
+17:15:04.298 INFO  review-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+17:15:04.298 INFO  review-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+17:15:04.300 INFO  review-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+17:15:04.327 INFO  review-service [main] b.p.s.c.ReviewControllerTest - Started ReviewControllerTest in 2.167 seconds (process running for 2.935)
+17:15:04.420 INFO  review-service [main] b.p.s.controller.ReviewController - GetReviewsByPostId called postId=5
+17:15:04.504 INFO  review-service [main] b.p.s.controller.ReviewController - ApprovePost requested postId=7
+17:15:04.531 INFO  review-service [main] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=ann
+17:18:58.467 INFO  review-service [main] b.p.s.c.ReviewControllerTest - Starting ReviewControllerTest using Java 17.0.13 with PID 26936 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service)
+17:18:58.468 DEBUG review-service [main] b.p.s.c.ReviewControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+17:18:58.469 INFO  review-service [main] b.p.s.c.ReviewControllerTest - No active profile set, falling back to 1 default profile: "default"
+17:18:58.489 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+17:18:58.489 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt. Will be trying the next url if available
+17:18:58.489 WARN  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@42f9c19a uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt
+17:18:59.819 INFO  review-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+17:18:59.820 INFO  review-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+17:18:59.822 INFO  review-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+17:18:59.854 INFO  review-service [main] b.p.s.c.ReviewControllerTest - Started ReviewControllerTest in 2.267 seconds (process running for 3.036)
+17:18:59.908 INFO  review-service [main] b.p.s.controller.ReviewController - ApprovePost requested postId=123
+17:18:59.961 INFO  review-service [main] b.p.s.controller.ReviewController - RejectPost requested postId=7 by reviewer=ann
+17:19:00.014 INFO  review-service [main] b.p.s.controller.ReviewController - GetReviewsByPostId called postId=5
+17:19:00.025 INFO  review-service [main] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=ann
+17:19:00.038 WARN  review-service [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'username' for method parameter type String is not present]
+19:10:05.366 INFO  review-service [main] b.p.s.r.ReviewRepositoryTest - Starting ReviewRepositoryTest using Java 17.0.13 with PID 33544 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service)
+19:10:05.368 DEBUG review-service [main] b.p.s.r.ReviewRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+19:10:05.368 INFO  review-service [main] b.p.s.r.ReviewRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+19:10:05.384 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+19:10:05.384 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt. Will be trying the next url if available
+19:10:05.384 WARN  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@4dcc40c5 uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt
+19:10:05.722 INFO  review-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:10:05.923 INFO  review-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 192 ms. Found 2 JPA repository interfaces.
+19:10:05.977 INFO  review-service [main] o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+19:10:06.227 INFO  review-service [main] o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:e6a73c00-cdbe-4e87-b311-e9d10cc62f9b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+19:10:06.728 INFO  review-service [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:10:06.809 INFO  review-service [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+19:10:06.812 INFO  review-service [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+19:10:07.021 INFO  review-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+19:10:07.033 INFO  review-service [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+19:10:07.126 INFO  review-service [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+19:10:07.490 INFO  review-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+19:10:08.052 INFO  review-service [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:10:08.098 INFO  review-service [main] o.h.t.s.i.e.GenerationTargetToDatabase - HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+19:10:08.100 INFO  review-service [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:10:08.587 INFO  review-service [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+19:10:09.381 INFO  review-service [main] b.p.s.r.ReviewRepositoryTest - Started ReviewRepositoryTest in 5.478 seconds (process running for 8.371)
+19:10:09.734 INFO  review-service [main] b.p.s.c.ReviewControllerTest - Starting ReviewControllerTest using Java 17.0.13 with PID 33544 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\review-service)
+19:10:09.735 DEBUG review-service [main] b.p.s.c.ReviewControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+19:10:09.735 INFO  review-service [main] b.p.s.c.ReviewControllerTest - No active profile set, falling back to 1 default profile: "default"
+19:10:09.738 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+19:10:09.738 INFO  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt. Will be trying the next url if available
+19:10:09.738 WARN  review-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@3bb8a56c uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/review-service/default": Connection refused: getsockopt
+19:10:10.399 INFO  review-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+19:10:10.399 INFO  review-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+19:10:10.400 INFO  review-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+19:10:10.410 INFO  review-service [main] b.p.s.c.ReviewControllerTest - Started ReviewControllerTest in 0.834 seconds (process running for 9.4)
+19:10:10.463 INFO  review-service [main] b.p.s.controller.ReviewController - ApprovePost requested postId=123
+19:10:10.498 INFO  review-service [main] b.p.s.controller.ReviewController - RejectPost requested postId=7 by reviewer=ann
+19:10:10.581 INFO  review-service [main] b.p.s.controller.ReviewController - GetReviewsByPostId called postId=5
+19:10:10.589 INFO  review-service [main] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=ann
+19:10:10.602 WARN  review-service [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'username' for method parameter type String is not present]
+19:10:10.607 INFO  review-service [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:10:10.608 INFO  review-service [SpringApplicationShutdownHook] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'

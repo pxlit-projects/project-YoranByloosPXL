@@ -25,9 +25,12 @@ public class Bookmark {
 
     public Bookmark() {}
 
-    public Bookmark(String username, Long postId) {
+    public Bookmark(Long id, String username, Long postId, LocalDateTime createdAt, LocalDateTime updatedAt) {
+        this.id = id;
         this.username = username;
         this.postId = postId;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
     }
 
     public Long getId() { return id; }
@@ -37,4 +40,13 @@ public class Bookmark {
     public void setPostId(Long postId) { this.postId = postId; }
     public LocalDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
 }
