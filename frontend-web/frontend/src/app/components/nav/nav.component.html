@@ -12,6 +12,9 @@
 
     <!-- rechter iconen -->
     <div class="nav__right">
+      <!-- Notificaties (alleen als ingelogd) -->
+      <app-notification-dropdown *ngIf="auth.isLoggedIn$ | async"></app-notification-dropdown>
+
       <a
         class="icon-btn"
         [routerLink]="['/bookmarks']"
@@ -26,13 +29,11 @@
         type="button"
         (click)="onUserClick()"
         [title]="(auth.isLoggedIn$ | async) ? 'Logout' : 'Login'"
-        [attr.aria-label]="(auth.isLoggedIn$ | async) ? 'Logout' : 'Login'"
-      >
+        [attr.aria-label]="(auth.isLoggedIn$ | async) ? 'Logout' : 'Login'">
         <img
           class="icon"
           [src]="(auth.isLoggedIn$ | async) ? '/logout-icon.png' : '/account-icon.png'"
-          [alt]="(auth.isLoggedIn$ | async) ? 'Logout' : 'Account'"
-        />
+          [alt]="(auth.isLoggedIn$ | async) ? 'Logout' : 'Account'" />
       </button>
     </div>
   </div>

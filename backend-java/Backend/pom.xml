@@ -29,6 +29,7 @@
 		<module>config-service</module>
         <module>gateway-service</module>
         <module>bookmark-service</module>
+        <module>notification-service</module>
     </modules>
     <scm>
 		<connection/>
@@ -69,6 +70,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 	</dependencies>
 

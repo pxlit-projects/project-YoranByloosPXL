@@ -1,0 +1,19 @@
+<div class="notif-root">
+  <button class="icon-btn" type="button" (click)="toggle()" title="Notificaties" aria-label="Notificaties">
+    <img class="icon" src="/notification-image.png" alt="Notificaties" />
+    <span class="badge" *ngIf="items().length > 0">{{ items().length }}</span>
+  </button>
+
+  <div class="dropdown" *ngIf="open()">
+    <div class="state" *ngIf="loading()">Laden…</div>
+    <div class="state error" *ngIf="!loading() && error()">{{ error() }}</div>
+    <ul *ngIf="!loading() && !error()">
+      <li *ngFor="let n of items()">
+        <div class="msg">{{ n.message }}</div>
+        <div class="date">{{ n.createdAt | date:'short' }}</div>
+        <button class="remove" (click)="removeOne(n)" aria-label="Verwijder">×</button>
+      </li>
+      <li class="empty" *ngIf="items().length === 0">Geen meldingen</li>
+    </ul>
+  </div>
+</div>

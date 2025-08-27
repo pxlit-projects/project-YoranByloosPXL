@@ -4,7 +4,7 @@
   <p class="card__text">{{ excerpt }}</p>
 
   <div class="card__footer">
-    <span class="date">{{ post.createdAt | date:'dd/MM/yyyy' }}</span>
+    <span class="date">{{ post.createdAt | date:'dd/MM/yyyy' }} door <b>{{ post.author }}</b></span>
     <a class="btn" [routerLink]="['/posts', post.id]">Klik om alles te lezen</a>
   </div>
 </article>

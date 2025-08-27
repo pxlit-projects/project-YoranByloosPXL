@@ -4,6 +4,8 @@ import be.pxl.services.domain.Post;
 import be.pxl.services.domain.PostStatus;
 import be.pxl.services.dto.CreatePostDTO;
 import be.pxl.services.dto.UpdatePostDTO;
+import be.pxl.services.messaging.PostModerationEvent;
+import be.pxl.services.messaging.NotificationPublisher;
 import be.pxl.services.repository.PostRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,9 +21,11 @@ public class PostService implements IPostService {
 
     private static final Logger log = LoggerFactory.getLogger(PostService.class);
     private final PostRepository postRepository;
+    private final NotificationPublisher publisher;
 
-    public PostService(PostRepository postRepository) {
+    public PostService(PostRepository postRepository, NotificationPublisher publisher) {
         this.postRepository = postRepository;
+        this.publisher = publisher;
     }
 
     @Override
@@ -136,15 +140,22 @@ public class PostService implements IPostService {
 
     @Override
     public void updatePostStatus(Long id, String status) {
-        log.info("Update post status requested id={} newStatus={}", id, status);
-        Post post = postRepository.findById(id).orElseThrow(() -> {
-            log.warn("Post not found id={}", id);
-            return new IllegalArgumentException("Post not found with id: " + id);
-        });
+        Post post = postRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Post not found: " + id));
+
         post.setStatus(PostStatus.valueOf(status));
         post.setUpdatedAt(LocalDateTime.now());
         postRepository.save(post);
-        log.debug("Post status updated id={} status={}", id, post.getStatus());
+
+        if (PostStatus.GEWEIGERD.name().equals(status) || PostStatus.GOEDGEKEURD.name().equals(status)) {
+            PostModerationEvent evt = new PostModerationEvent(
+                    post.getId(),
+                    post.getAuthor(),
+                    status,
+                    null
+            );
+            publisher.publish(evt);
+        }
     }
 
     public Post getById(Long id) {

@@ -46,6 +46,13 @@ spring:
           filters:
             - RewritePath=^/bookmarks(?<rest>/?.*)$, /api/bookmarks${rest}
 
+        - id: notification-service
+          uri: lb://notification-service
+          predicates:
+            - Path=/notifications,/notifications/**
+          filters:
+            - RewritePath=^/notifications(?<rest>/?.*)$, /api/notifications${rest}
+
 eureka:
   client:
     serviceUrl:

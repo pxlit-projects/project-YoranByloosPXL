@@ -4,11 +4,12 @@ import { AsyncPipe, NgIf } from '@angular/common';
 import { AuthService } from '../../services/auth.service';
 import { firstValueFrom } from 'rxjs';
 import { Location } from '@angular/common';
+import { NotificationDropdownComponent } from '../notification-dropdown/notification-dropdown.component';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [RouterLink, AsyncPipe, NgIf],
+  imports: [RouterLink, AsyncPipe, NgIf, NotificationDropdownComponent],
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
@@ -25,7 +26,8 @@ export class NavComponent {
     } else {
       this.auth.logout();
       this.router.navigate(['/']);
-      window.location.reload()
+      // eenvoudige refresh zodat nav/username direct resetten
+      window.location.reload();
     }
   }
 }

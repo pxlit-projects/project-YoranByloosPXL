@@ -1,0 +1,39 @@
+15:40:39.557 INFO  post-service [main] b.p.s.controller.PostControllerTest - Starting PostControllerTest using Java 23.0.1 with PID 30704 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\post-service)
+15:40:39.558 DEBUG post-service [main] b.p.s.controller.PostControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+15:40:39.559 INFO  post-service [main] b.p.s.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:40:39.573 INFO  post-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+15:40:39.573 INFO  post-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/post-service/default": Connection refused: getsockopt. Will be trying the next url if available
+15:40:39.573 WARN  post-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@4c2869a9 uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/post-service/default": Connection refused: getsockopt
+15:40:40.797 INFO  post-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+15:40:40.797 INFO  post-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+15:40:40.798 INFO  post-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+15:40:40.818 INFO  post-service [main] b.p.s.controller.PostControllerTest - Started PostControllerTest in 2.144 seconds (process running for 3.187)
+15:40:40.896 INFO  post-service [main] b.p.s.controller.PostController - FilterPosts called keyword=post author=yo date=2025-09-25
+15:40:40.913 DEBUG post-service [main] b.p.s.controller.PostController - FilterPosts result count=0
+15:40:41.015 INFO  post-service [main] b.p.s.controller.PostController - GetPostsByIds called count=2
+15:40:41.024 INFO  post-service [main] b.p.s.controller.PostController - GetPublishedPosts called
+15:40:41.047 INFO  post-service [main] b.p.s.controller.PostController - ApprovePost requested id=42
+15:40:41.053 INFO  post-service [main] b.p.s.controller.PostController - FilterPosts called keyword=abc author=null date=2025-09-01T00:00:00
+15:40:41.054 DEBUG post-service [main] b.p.s.controller.PostController - FilterPosts result count=0
+15:40:41.060 INFO  post-service [main] b.p.s.controller.PostController - DisapprovePost requested id=5
+15:41:59.133 INFO  post-service [main] b.p.s.controller.PostControllerTest - Starting PostControllerTest using Java 23.0.1 with PID 32308 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend\post-service)
+15:41:59.134 DEBUG post-service [main] b.p.s.controller.PostControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+15:41:59.134 INFO  post-service [main] b.p.s.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:41:59.148 INFO  post-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+15:41:59.148 INFO  post-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8088/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8088/post-service/default": Connection refused: getsockopt. Will be trying the next url if available
+15:41:59.148 WARN  post-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@bd1111a uris = array<String>['http://localhost:8088/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8088/post-service/default": Connection refused: getsockopt
+15:42:00.364 INFO  post-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+15:42:00.364 INFO  post-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+15:42:00.365 INFO  post-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+15:42:00.387 INFO  post-service [main] b.p.s.controller.PostControllerTest - Started PostControllerTest in 2.105 seconds (process running for 3.005)
+15:42:00.466 INFO  post-service [main] b.p.s.controller.PostController - FilterPosts called keyword=post author=yo date=2025-09-25
+15:42:00.482 DEBUG post-service [main] b.p.s.controller.PostController - FilterPosts result count=0
+15:42:00.577 INFO  post-service [main] b.p.s.controller.PostController - FilterPosts called keyword=x author=null date=nonsense
+15:42:00.578 WARN  post-service [main] b.p.s.controller.PostController - Unsupported date format 'nonsense', ignoring date filter
+15:42:00.578 DEBUG post-service [main] b.p.s.controller.PostController - FilterPosts result count=0
+15:42:00.588 INFO  post-service [main] b.p.s.controller.PostController - GetPostsByIds called count=2
+15:42:00.597 INFO  post-service [main] b.p.s.controller.PostController - GetPublishedPosts called
+15:42:00.618 INFO  post-service [main] b.p.s.controller.PostController - ApprovePost requested id=42
+15:42:00.624 INFO  post-service [main] b.p.s.controller.PostController - FilterPosts called keyword=abc author=null date=2025-09-01T00:00:00
+15:42:00.625 DEBUG post-service [main] b.p.s.controller.PostController - FilterPosts result count=0
+15:42:00.633 INFO  post-service [main] b.p.s.controller.PostController - DisapprovePost requested id=5
