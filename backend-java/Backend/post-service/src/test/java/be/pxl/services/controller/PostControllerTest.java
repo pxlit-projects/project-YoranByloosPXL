@@ -1,5 +1,6 @@
 package be.pxl.services.controller;
 
+import be.pxl.services.TestBootApp;
 import be.pxl.services.domain.Post;
 import be.pxl.services.services.IPostService;
 import org.junit.jupiter.api.Test;
@@ -7,6 +8,7 @@ import org.mockito.ArgumentCaptor;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 
 import jakarta.annotation.Resource;
@@ -19,9 +21,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@WebMvcTest(PostController.class)
+@WebMvcTest(controllers = PostController.class)
+@ContextConfiguration(classes = {TestBootApp.class, PostController.class})
 class PostControllerTest {
-
     @Resource
     private MockMvc mvc;
 

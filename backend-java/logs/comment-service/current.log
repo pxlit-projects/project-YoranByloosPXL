@@ -4363,3 +4363,30 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 01:01:05.527 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 01:06:05.542 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 01:11:05.550 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:15:21.499 INFO  comment-service [http-nio-8082-exec-6] b.p.s.controller.CommentController - GetCommentsByPostId called postId=1
+01:15:21.521 INFO  comment-service [http-nio-8082-exec-6] b.p.services.services.CommentService - Fetched comments for postId=1 count=2
+01:15:28.595 INFO  comment-service [http-nio-8082-exec-7] b.p.s.controller.CommentController - GetCommentsByPostId called postId=55
+01:15:28.599 INFO  comment-service [http-nio-8082-exec-7] b.p.services.services.CommentService - Fetched comments for postId=55 count=1
+01:16:05.567 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:21:05.571 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:26:05.578 INFO  comment-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:26:44.840 INFO  comment-service [http-nio-8082-exec-9] b.p.s.controller.CommentController - GetCommentsByPostId called postId=1
+01:26:44.844 INFO  comment-service [http-nio-8082-exec-9] b.p.services.services.CommentService - Fetched comments for postId=1 count=2
+01:26:48.967 INFO  comment-service [http-nio-8082-exec-10] b.p.s.controller.CommentController - GetCommentsByPostId called postId=52
+01:26:48.973 INFO  comment-service [http-nio-8082-exec-10] b.p.services.services.CommentService - Fetched comments for postId=52 count=3
+01:26:58.749 INFO  comment-service [http-nio-8082-exec-1] b.p.s.controller.CommentController - UpdateComment requested commentId=2 by user=admin
+01:26:58.749 INFO  comment-service [http-nio-8082-exec-1] b.p.services.services.CommentService - Update comment requested commentId=2 by user=admin
+01:27:00.289 INFO  comment-service [http-nio-8082-exec-3] b.p.s.controller.CommentController - DeleteComment requested commentId=2 by user=admin
+01:27:00.289 INFO  comment-service [http-nio-8082-exec-3] b.p.services.services.CommentService - Delete comment requested commentId=2 by user=admin
+01:27:05.062 INFO  comment-service [http-nio-8082-exec-8] b.p.s.controller.CommentController - GetCommentsByPostId called postId=53
+01:27:05.064 INFO  comment-service [http-nio-8082-exec-8] b.p.services.services.CommentService - Fetched comments for postId=53 count=0
+01:27:08.526 INFO  comment-service [http-nio-8082-exec-4] b.p.s.controller.CommentController - AddComment requested by user=admin for postId=53
+01:27:08.526 INFO  comment-service [http-nio-8082-exec-4] b.p.services.services.CommentService - Add comment requested by user=admin postId=53
+01:27:10.453 INFO  comment-service [http-nio-8082-exec-5] b.p.s.controller.CommentController - AddComment requested by user=admin for postId=53
+01:27:10.453 INFO  comment-service [http-nio-8082-exec-5] b.p.services.services.CommentService - Add comment requested by user=admin postId=53
+01:27:11.292 INFO  comment-service [http-nio-8082-exec-6] b.p.s.controller.CommentController - DeleteComment requested commentId=206 by user=admin
+01:27:11.293 INFO  comment-service [http-nio-8082-exec-6] b.p.services.services.CommentService - Delete comment requested commentId=206 by user=admin
+01:27:14.438 INFO  comment-service [http-nio-8082-exec-7] b.p.s.controller.CommentController - UpdateComment requested commentId=205 by user=admin
+01:27:14.438 INFO  comment-service [http-nio-8082-exec-7] b.p.services.services.CommentService - Update comment requested commentId=205 by user=admin
+01:27:18.920 INFO  comment-service [http-nio-8082-exec-2] b.p.s.controller.CommentController - UpdateComment requested commentId=205 by user=admin
+01:27:18.921 INFO  comment-service [http-nio-8082-exec-2] b.p.services.services.CommentService - Update comment requested commentId=205 by user=admin

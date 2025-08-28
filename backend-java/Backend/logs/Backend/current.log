@@ -1,0 +1,137 @@
+09:40:27.429 INFO  Backend [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+09:40:27.617 INFO  Backend [main] b.p.s.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.13 with PID 4788 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+09:40:27.618 DEBUG Backend [main] b.p.s.controller.PostControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+09:40:27.619 INFO  Backend [main] b.p.s.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+09:40:30.419 INFO  Backend [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+09:40:30.419 INFO  Backend [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+09:40:30.421 INFO  Backend [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+09:40:30.587 INFO  Backend [main] b.p.s.controller.PostControllerTest - Started PostControllerTest in 4.213 seconds (process running for 8.674)
+09:40:30.701 INFO  Backend [main] b.p.s.controller.PostController - FilterPosts called keyword=post author=yo date=2025-09-25
+09:40:30.721 DEBUG Backend [main] b.p.s.controller.PostController - FilterPosts result count=0
+09:40:30.948 INFO  Backend [main] b.p.s.controller.PostController - FilterPosts called keyword=x author=null date=nonsense
+09:40:30.949 WARN  Backend [main] b.p.s.controller.PostController - Unsupported date format 'nonsense', ignoring date filter
+09:40:30.949 DEBUG Backend [main] b.p.s.controller.PostController - FilterPosts result count=0
+09:40:30.963 INFO  Backend [main] b.p.s.controller.PostController - GetPostsByIds called count=2
+09:40:30.974 INFO  Backend [main] b.p.s.controller.PostController - GetPublishedPosts called
+09:40:31.039 INFO  Backend [main] b.p.s.controller.PostController - ApprovePost requested id=42
+09:40:31.046 INFO  Backend [main] b.p.s.controller.PostController - FilterPosts called keyword=abc author=null date=2025-09-01T00:00:00
+09:40:31.046 DEBUG Backend [main] b.p.s.controller.PostController - FilterPosts result count=0
+09:40:31.053 INFO  Backend [main] b.p.s.controller.PostController - DisapprovePost requested id=5
+09:40:31.279 INFO  Backend [main] b.pxl.services.services.PostService - Get posts by ids requested count=0
+09:40:31.290 INFO  Backend [main] b.pxl.services.services.PostService - Get posts by ids requested count=0
+09:40:31.293 INFO  Backend [main] b.pxl.services.services.PostService - Submit post requested id=99 by user=yoran
+09:40:31.293 DEBUG Backend [main] b.pxl.services.services.PostService - Post submitted id=99 newStatus=INGEDIEND
+09:40:31.296 INFO  Backend [main] b.pxl.services.services.PostService - Fetched my submissions for user=yoran count=1
+09:40:31.299 INFO  Backend [main] b.pxl.services.services.PostService - Update post requested id=99 by user=yoran
+09:40:31.299 DEBUG Backend [main] b.pxl.services.services.PostService - Post updated id=99 status=CONCEPT
+09:40:31.310 INFO  Backend [main] b.pxl.services.services.PostService - Fetched drafts for user=yoran count=1
+09:40:31.313 INFO  Backend [main] b.pxl.services.services.PostService - Update post requested id=99 by user=not-yoran
+09:40:31.313 WARN  Backend [main] b.pxl.services.services.PostService - Unauthorized update attempt id=99 by user=not-yoran (status=CONCEPT)
+09:40:31.318 INFO  Backend [main] b.pxl.services.services.PostService - Publish post requested id=2 by user=a
+09:40:31.318 DEBUG Backend [main] b.pxl.services.services.PostService - Post published id=2 status=GEPUBLICEERD
+09:40:31.320 INFO  Backend [main] b.pxl.services.services.PostService - Fetched published posts count=1
+09:40:31.322 INFO  Backend [main] b.pxl.services.services.PostService - Get post by id requested id=99
+09:40:31.323 INFO  Backend [main] b.pxl.services.services.PostService - Create post requested by user=yoran submitForReview=true title='Hello'
+09:40:31.324 DEBUG Backend [main] b.pxl.services.services.PostService - Post created id=1 status=INGEDIEND
+09:40:31.326 INFO  Backend [main] b.pxl.services.services.PostService - Fetched reviewable posts for reviewer=admin count=1
+09:40:31.328 INFO  Backend [main] b.pxl.services.services.PostService - Publish post requested id=1 by user=a
+09:40:31.328 WARN  Backend [main] b.pxl.services.services.PostService - Publish rejected id=1 status=CONCEPT
+09:40:31.497 INFO  Backend [main] b.p.s.r.BookmarkRepositoryTest - Starting BookmarkRepositoryTest using Java 17.0.13 with PID 4788 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+09:40:31.498 DEBUG Backend [main] b.p.s.r.BookmarkRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+09:40:31.498 INFO  Backend [main] b.p.s.r.BookmarkRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+09:40:31.686 INFO  Backend [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:40:31.766 INFO  Backend [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+09:40:31.818 INFO  Backend [main] o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+09:40:31.898 INFO  Backend [main] o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:e4d0e381-d6b8-4467-aa50-d481b0e63246;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+09:40:32.465 INFO  Backend [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09:40:32.580 INFO  Backend [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+09:40:32.584 INFO  Backend [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+09:40:32.855 INFO  Backend [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+09:40:32.875 INFO  Backend [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09:40:33.001 INFO  Backend [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+09:40:33.492 INFO  Backend [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+09:40:34.316 INFO  Backend [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:40:34.376 INFO  Backend [main] o.h.t.s.i.e.GenerationTargetToDatabase - HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+09:40:34.381 INFO  Backend [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:40:34.946 INFO  Backend [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+09:40:35.863 INFO  Backend [main] b.p.s.r.BookmarkRepositoryTest - Started BookmarkRepositoryTest in 4.523 seconds (process running for 13.95)
+09:40:36.231 INFO  Backend [main] b.p.services.services.CommentService - Fetched comments for postId=7 count=1
+09:40:36.234 INFO  Backend [main] b.p.services.services.CommentService - Add comment requested by user=ann postId=5
+09:40:36.236 INFO  Backend [main] b.p.services.services.CommentService - Delete comment requested commentId=33 by user=ann
+09:40:36.239 INFO  Backend [main] b.p.services.services.CommentService - Delete comment requested commentId=44 by user=ann
+09:40:36.239 WARN  Backend [main] b.p.services.services.CommentService - Unauthorized comment delete attempt commentId=44 by user=ann
+09:40:36.242 INFO  Backend [main] b.p.services.services.CommentService - Update comment requested commentId=12 by user=ann
+09:40:36.242 WARN  Backend [main] b.p.services.services.CommentService - Unauthorized comment update attempt commentId=12 by user=ann
+09:40:36.243 INFO  Backend [main] b.p.services.services.CommentService - Delete comment requested commentId=77 by user=ann
+09:40:36.243 WARN  Backend [main] b.p.services.services.CommentService - Comment not found commentId=77
+09:40:36.245 INFO  Backend [main] b.p.services.services.CommentService - Update comment requested commentId=11 by user=ann
+09:40:36.248 INFO  Backend [main] b.p.services.services.CommentService - Update comment requested commentId=99 by user=ann
+09:40:36.248 WARN  Backend [main] b.p.services.services.CommentService - Comment not found commentId=99
+09:40:36.604 INFO  Backend [main] b.p.s.c.NotificationControllerTest - Starting NotificationControllerTest using Java 17.0.13 with PID 4788 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+09:40:36.604 DEBUG Backend [main] b.p.s.c.NotificationControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+09:40:36.604 INFO  Backend [main] b.p.s.c.NotificationControllerTest - No active profile set, falling back to 1 default profile: "default"
+09:40:36.855 INFO  Backend [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+09:40:36.856 INFO  Backend [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+09:40:36.856 INFO  Backend [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+09:40:36.862 INFO  Backend [main] b.p.s.c.NotificationControllerTest - Started NotificationControllerTest in 0.425 seconds (process running for 14.95)
+09:40:37.136 INFO  Backend [main] b.p.s.r.CommentRepositoryTest - Starting CommentRepositoryTest using Java 17.0.13 with PID 4788 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+09:40:37.136 DEBUG Backend [main] b.p.s.r.CommentRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+09:40:37.136 INFO  Backend [main] b.p.s.r.CommentRepositoryTest - The following 1 profile is active: "test"
+09:40:37.223 INFO  Backend [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:40:37.256 INFO  Backend [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 5 JPA repository interfaces.
+09:40:37.267 INFO  Backend [main] o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+09:40:37.276 INFO  Backend [main] o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:7f8e036e-59b8-474a-b9d7-004a20f7ea47;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+09:40:37.299 INFO  Backend [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09:40:37.331 INFO  Backend [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+09:40:37.331 INFO  Backend [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09:40:37.334 INFO  Backend [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+09:40:37.359 INFO  Backend [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+09:40:37.421 INFO  Backend [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:40:37.432 INFO  Backend [main] o.h.t.s.i.e.GenerationTargetToDatabase - HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+09:40:37.432 INFO  Backend [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:40:37.526 INFO  Backend [main] b.p.s.r.CommentRepositoryTest - Started CommentRepositoryTest in 0.557 seconds (process running for 15.614)
+09:40:37.800 INFO  Backend [main] b.p.s.c.CommentControllerTest - Starting CommentControllerTest using Java 17.0.13 with PID 4788 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+09:40:37.801 DEBUG Backend [main] b.p.s.c.CommentControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+09:40:37.801 INFO  Backend [main] b.p.s.c.CommentControllerTest - No active profile set, falling back to 1 default profile: "default"
+09:40:38.014 INFO  Backend [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+09:40:38.014 INFO  Backend [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+09:40:38.014 INFO  Backend [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+09:40:38.019 INFO  Backend [main] b.p.s.c.CommentControllerTest - Started CommentControllerTest in 0.377 seconds (process running for 16.106)
+09:40:38.077 INFO  Backend [main] b.p.s.controller.CommentController - AddComment requested by user=joris for postId=7
+09:40:38.091 INFO  Backend [main] b.p.s.controller.CommentController - DeleteComment requested commentId=42 by user=ann
+09:40:38.097 INFO  Backend [main] b.p.s.controller.CommentController - GetCommentsByPostId called postId=5
+09:40:38.106 INFO  Backend [main] b.p.s.controller.CommentController - UpdateComment requested commentId=5 by user=ann
+09:40:38.111 WARN  Backend [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'username' for method parameter type String is not present]
+09:40:38.143 INFO  Backend [main] b.p.s.services.BookmarkService - AddBookmark requested user=ann postId=10
+09:40:38.146 INFO  Backend [main] b.p.s.services.BookmarkService - AddBookmark requested user=ann postId=10
+09:40:38.148 INFO  Backend [main] b.p.s.services.BookmarkService - GetBookmarkedPosts user=ann count=2
+09:40:38.150 INFO  Backend [main] b.p.s.services.BookmarkService - RemoveBookmark requested user=ann postId=10
+09:40:38.152 INFO  Backend [main] b.p.s.services.BookmarkService - RemoveBookmark requested user=ann postId=10
+09:40:38.153 INFO  Backend [main] b.p.s.services.BookmarkService - AddBookmark requested user=ann postId=10
+09:40:38.154 INFO  Backend [main] b.p.s.services.BookmarkService - GetBookmarkedPosts user=ann count=0
+09:40:38.511 INFO  Backend [main] b.p.s.c.BookmarkControllerTest - Starting BookmarkControllerTest using Java 17.0.13 with PID 4788 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+09:40:38.511 DEBUG Backend [main] b.p.s.c.BookmarkControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+09:40:38.511 INFO  Backend [main] b.p.s.c.BookmarkControllerTest - No active profile set, falling back to 1 default profile: "default"
+09:40:38.713 INFO  Backend [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+09:40:38.713 INFO  Backend [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+09:40:38.713 INFO  Backend [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+09:40:38.717 INFO  Backend [main] b.p.s.c.BookmarkControllerTest - Started BookmarkControllerTest in 0.355 seconds (process running for 16.805)
+09:40:38.721 INFO  Backend [main] b.p.s.controller.BookmarkController - RemoveBookmark requested by user=ann postId=7
+09:40:38.727 INFO  Backend [main] b.p.s.controller.BookmarkController - AddBookmark requested by user=ann postId=9
+09:40:38.736 INFO  Backend [main] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=ann
+09:40:38.918 INFO  Backend [main] b.p.s.c.ReviewControllerTest - Starting ReviewControllerTest using Java 17.0.13 with PID 4788 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+09:40:38.918 DEBUG Backend [main] b.p.s.c.ReviewControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+09:40:38.918 INFO  Backend [main] b.p.s.c.ReviewControllerTest - No active profile set, falling back to 1 default profile: "default"
+09:40:39.111 INFO  Backend [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+09:40:39.111 INFO  Backend [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+09:40:39.111 INFO  Backend [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+09:40:39.114 INFO  Backend [main] b.p.s.c.ReviewControllerTest - Started ReviewControllerTest in 0.341 seconds (process running for 17.202)
+09:40:39.119 INFO  Backend [main] b.p.s.controller.ReviewController - ApprovePost requested postId=123
+09:40:39.124 INFO  Backend [main] b.p.s.controller.ReviewController - RejectPost requested postId=7 by reviewer=ann
+09:40:39.134 INFO  Backend [main] b.p.s.controller.ReviewController - GetReviewsByPostId called postId=5
+09:40:39.140 INFO  Backend [main] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=ann
+09:40:39.147 WARN  Backend [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'username' for method parameter type String is not present]
+09:40:39.157 INFO  Backend [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:40:39.157 INFO  Backend [SpringApplicationShutdownHook] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09:40:39.168 INFO  Backend [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:40:39.168 INFO  Backend [SpringApplicationShutdownHook] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'

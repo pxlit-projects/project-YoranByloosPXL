@@ -10760,3 +10760,116 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 01:00:42.626 INFO  post-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 01:05:42.635 INFO  post-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 01:10:42.649 INFO  post-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:15:13.236 INFO  post-service [http-nio-8080-exec-7] b.p.s.controller.PostController - GetPublishedPosts called
+01:15:13.251 INFO  post-service [http-nio-8080-exec-7] b.pxl.services.services.PostService - Fetched published posts count=7
+01:15:19.005 INFO  post-service [http-nio-8080-exec-6] b.p.s.controller.PostController - GetPublishedPosts called
+01:15:19.008 INFO  post-service [http-nio-8080-exec-6] b.pxl.services.services.PostService - Fetched published posts count=7
+01:15:21.334 INFO  post-service [http-nio-8080-exec-10] b.p.s.controller.PostController - GetPostById called id=1
+01:15:21.334 INFO  post-service [http-nio-8080-exec-10] b.pxl.services.services.PostService - Get post by id requested id=1
+01:15:21.438 INFO  post-service [http-nio-8080-exec-9] b.p.s.controller.PostController - GetPostsByIds called count=1
+01:15:21.438 INFO  post-service [http-nio-8080-exec-9] b.pxl.services.services.PostService - Get posts by ids requested count=1
+01:15:21.440 DEBUG post-service [http-nio-8080-exec-9] b.pxl.services.services.PostService - Get posts by ids result count=1
+01:15:24.078 INFO  post-service [http-nio-8080-exec-1] b.p.s.controller.PostController - GetReviewablePosts called reviewer=admin
+01:15:24.080 INFO  post-service [http-nio-8080-exec-1] b.pxl.services.services.PostService - Fetched reviewable posts for reviewer=admin count=1
+01:15:25.593 INFO  post-service [http-nio-8080-exec-4] b.p.s.controller.PostController - GetMySubmissions called user=admin
+01:15:25.596 INFO  post-service [http-nio-8080-exec-4] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=2
+01:15:25.915 INFO  post-service [http-nio-8080-exec-5] b.p.s.controller.PostController - GetDrafts called for user=admin
+01:15:25.917 INFO  post-service [http-nio-8080-exec-5] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+01:15:26.258 INFO  post-service [http-nio-8080-exec-2] b.p.s.controller.PostController - GetMySubmissions called user=admin
+01:15:26.261 INFO  post-service [http-nio-8080-exec-2] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=2
+01:15:26.727 INFO  post-service [http-nio-8080-exec-8] b.p.s.controller.PostController - GetDrafts called for user=admin
+01:15:26.729 INFO  post-service [http-nio-8080-exec-8] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+01:15:27.104 INFO  post-service [http-nio-8080-exec-3] b.p.s.controller.PostController - GetPublishedPosts called
+01:15:27.106 INFO  post-service [http-nio-8080-exec-3] b.pxl.services.services.PostService - Fetched published posts count=7
+01:15:28.568 INFO  post-service [http-nio-8080-exec-7] b.p.s.controller.PostController - GetPostById called id=55
+01:15:28.568 INFO  post-service [http-nio-8080-exec-7] b.pxl.services.services.PostService - Get post by id requested id=55
+01:15:28.584 INFO  post-service [http-nio-8080-exec-6] b.p.s.controller.PostController - GetPostsByIds called count=1
+01:15:28.584 INFO  post-service [http-nio-8080-exec-6] b.pxl.services.services.PostService - Get posts by ids requested count=1
+01:15:28.585 DEBUG post-service [http-nio-8080-exec-6] b.pxl.services.services.PostService - Get posts by ids result count=1
+01:15:29.801 INFO  post-service [http-nio-8080-exec-10] b.p.s.controller.PostController - GetPublishedPosts called
+01:15:29.803 INFO  post-service [http-nio-8080-exec-10] b.pxl.services.services.PostService - Fetched published posts count=7
+01:15:31.446 INFO  post-service [http-nio-8080-exec-9] b.p.s.controller.PostController - GetPostsByIds called count=1
+01:15:31.446 INFO  post-service [http-nio-8080-exec-9] b.pxl.services.services.PostService - Get posts by ids requested count=1
+01:15:31.448 DEBUG post-service [http-nio-8080-exec-9] b.pxl.services.services.PostService - Get posts by ids result count=1
+01:15:36.476 INFO  post-service [http-nio-8080-exec-1] b.p.s.controller.PostController - GetPublishedPosts called
+01:15:36.478 INFO  post-service [http-nio-8080-exec-1] b.pxl.services.services.PostService - Fetched published posts count=7
+01:15:38.109 INFO  post-service [http-nio-8080-exec-4] b.p.s.controller.PostController - GetDrafts called for user=admin
+01:15:38.111 INFO  post-service [http-nio-8080-exec-4] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+01:15:38.652 INFO  post-service [http-nio-8080-exec-5] b.p.s.controller.PostController - GetMySubmissions called user=admin
+01:15:38.654 INFO  post-service [http-nio-8080-exec-5] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=2
+01:15:39.534 INFO  post-service [http-nio-8080-exec-2] b.p.s.controller.PostController - GetReviewablePosts called reviewer=admin
+01:15:39.536 INFO  post-service [http-nio-8080-exec-2] b.pxl.services.services.PostService - Fetched reviewable posts for reviewer=admin count=1
+01:15:39.880 INFO  post-service [http-nio-8080-exec-8] b.p.s.controller.PostController - GetMySubmissions called user=admin
+01:15:39.882 INFO  post-service [http-nio-8080-exec-8] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=2
+01:15:40.202 INFO  post-service [http-nio-8080-exec-3] b.p.s.controller.PostController - GetDrafts called for user=admin
+01:15:40.204 INFO  post-service [http-nio-8080-exec-3] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+01:15:42.665 INFO  post-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:15:55.698 INFO  post-service [http-nio-8080-exec-7] b.p.s.controller.PostController - GetPublishedPosts called
+01:15:55.701 INFO  post-service [http-nio-8080-exec-7] b.pxl.services.services.PostService - Fetched published posts count=7
+01:20:42.678 INFO  post-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:24:02.084 INFO  post-service [http-nio-8080-exec-1] b.p.s.controller.PostController - GetPublishedPosts called
+01:24:02.090 INFO  post-service [http-nio-8080-exec-1] b.pxl.services.services.PostService - Fetched published posts count=7
+01:24:02.094 INFO  post-service [http-nio-8080-exec-4] b.p.s.controller.PostController - GetDrafts called for user=admin
+01:24:02.096 INFO  post-service [http-nio-8080-exec-4] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+01:24:02.310 INFO  post-service [http-nio-8080-exec-5] b.p.s.controller.PostController - GetPublishedPosts called
+01:24:02.313 INFO  post-service [http-nio-8080-exec-5] b.pxl.services.services.PostService - Fetched published posts count=7
+01:24:03.100 INFO  post-service [http-nio-8080-exec-2] b.p.s.controller.PostController - GetDrafts called for user=admin
+01:24:03.103 INFO  post-service [http-nio-8080-exec-2] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+01:24:03.802 INFO  post-service [http-nio-8080-exec-8] b.p.s.controller.PostController - GetDrafts called for user=admin
+01:24:03.805 INFO  post-service [http-nio-8080-exec-8] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+01:24:04.341 INFO  post-service [http-nio-8080-exec-3] b.p.s.controller.PostController - GetMySubmissions called user=admin
+01:24:04.344 INFO  post-service [http-nio-8080-exec-3] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=2
+01:24:04.805 INFO  post-service [http-nio-8080-exec-7] b.p.s.controller.PostController - GetReviewablePosts called reviewer=admin
+01:24:04.806 INFO  post-service [http-nio-8080-exec-7] b.pxl.services.services.PostService - Fetched reviewable posts for reviewer=admin count=1
+01:24:05.124 INFO  post-service [http-nio-8080-exec-6] b.p.s.controller.PostController - GetMySubmissions called user=admin
+01:24:05.127 INFO  post-service [http-nio-8080-exec-6] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=2
+01:24:05.480 INFO  post-service [http-nio-8080-exec-10] b.p.s.controller.PostController - GetPublishedPosts called
+01:24:05.482 INFO  post-service [http-nio-8080-exec-10] b.pxl.services.services.PostService - Fetched published posts count=7
+01:24:07.114 INFO  post-service [http-nio-8080-exec-9] b.p.s.controller.PostController - GetPostsByIds called count=1
+01:24:07.114 INFO  post-service [http-nio-8080-exec-9] b.pxl.services.services.PostService - Get posts by ids requested count=1
+01:24:07.115 DEBUG post-service [http-nio-8080-exec-9] b.pxl.services.services.PostService - Get posts by ids result count=1
+01:24:08.655 INFO  post-service [http-nio-8080-exec-1] b.p.s.controller.PostController - GetPublishedPosts called
+01:24:08.657 INFO  post-service [http-nio-8080-exec-1] b.pxl.services.services.PostService - Fetched published posts count=7
+01:24:09.795 INFO  post-service [http-nio-8080-exec-4] b.p.s.controller.PostController - GetPublishedPosts called
+01:24:09.798 INFO  post-service [http-nio-8080-exec-4] b.pxl.services.services.PostService - Fetched published posts count=7
+01:24:13.394 INFO  post-service [http-nio-8080-exec-5] b.p.s.controller.PostController - GetPublishedPosts called
+01:24:13.397 INFO  post-service [http-nio-8080-exec-5] b.pxl.services.services.PostService - Fetched published posts count=7
+01:24:27.366 INFO  post-service [http-nio-8080-exec-2] b.p.s.controller.PostController - GetPublishedPosts called
+01:24:27.369 INFO  post-service [http-nio-8080-exec-2] b.pxl.services.services.PostService - Fetched published posts count=7
+01:24:27.443 INFO  post-service [http-nio-8080-exec-8] b.p.s.controller.PostController - GetPublishedPosts called
+01:24:27.445 INFO  post-service [http-nio-8080-exec-8] b.pxl.services.services.PostService - Fetched published posts count=7
+01:24:28.028 INFO  post-service [http-nio-8080-exec-3] b.p.s.controller.PostController - GetDrafts called for user=admin
+01:24:28.030 INFO  post-service [http-nio-8080-exec-3] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+01:25:42.690 INFO  post-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:26:39.016 INFO  post-service [http-nio-8080-exec-9] b.p.s.controller.PostController - GetMySubmissions called user=admin
+01:26:39.021 INFO  post-service [http-nio-8080-exec-9] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=2
+01:26:40.189 INFO  post-service [http-nio-8080-exec-1] b.p.s.controller.PostController - GetReviewablePosts called reviewer=admin
+01:26:40.191 INFO  post-service [http-nio-8080-exec-1] b.pxl.services.services.PostService - Fetched reviewable posts for reviewer=admin count=1
+01:26:41.261 INFO  post-service [http-nio-8080-exec-4] b.p.s.controller.PostController - GetDrafts called for user=admin
+01:26:41.265 INFO  post-service [http-nio-8080-exec-4] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+01:26:42.697 INFO  post-service [http-nio-8080-exec-5] b.p.s.controller.PostController - GetPublishedPosts called
+01:26:42.700 INFO  post-service [http-nio-8080-exec-5] b.pxl.services.services.PostService - Fetched published posts count=7
+01:26:44.805 INFO  post-service [http-nio-8080-exec-2] b.p.s.controller.PostController - GetPostById called id=1
+01:26:44.805 INFO  post-service [http-nio-8080-exec-2] b.pxl.services.services.PostService - Get post by id requested id=1
+01:26:44.825 INFO  post-service [http-nio-8080-exec-8] b.p.s.controller.PostController - GetPostsByIds called count=1
+01:26:44.825 INFO  post-service [http-nio-8080-exec-8] b.pxl.services.services.PostService - Get posts by ids requested count=1
+01:26:44.828 DEBUG post-service [http-nio-8080-exec-8] b.pxl.services.services.PostService - Get posts by ids result count=1
+01:26:46.960 INFO  post-service [http-nio-8080-exec-3] b.p.s.controller.PostController - GetPostsByIds called count=1
+01:26:46.960 INFO  post-service [http-nio-8080-exec-3] b.pxl.services.services.PostService - Get posts by ids requested count=1
+01:26:46.961 DEBUG post-service [http-nio-8080-exec-3] b.pxl.services.services.PostService - Get posts by ids result count=1
+01:26:48.939 INFO  post-service [http-nio-8080-exec-7] b.p.s.controller.PostController - GetPostById called id=52
+01:26:48.939 INFO  post-service [http-nio-8080-exec-7] b.pxl.services.services.PostService - Get post by id requested id=52
+01:26:48.956 INFO  post-service [http-nio-8080-exec-6] b.p.s.controller.PostController - GetPostsByIds called count=1
+01:26:48.956 INFO  post-service [http-nio-8080-exec-6] b.pxl.services.services.PostService - Get posts by ids requested count=1
+01:26:48.958 DEBUG post-service [http-nio-8080-exec-6] b.pxl.services.services.PostService - Get posts by ids result count=1
+01:27:01.555 INFO  post-service [http-nio-8080-exec-10] b.p.s.controller.PostController - GetPublishedPosts called
+01:27:01.559 INFO  post-service [http-nio-8080-exec-10] b.pxl.services.services.PostService - Fetched published posts count=7
+01:27:05.036 INFO  post-service [http-nio-8080-exec-9] b.p.s.controller.PostController - GetPostById called id=53
+01:27:05.036 INFO  post-service [http-nio-8080-exec-9] b.pxl.services.services.PostService - Get post by id requested id=53
+01:27:05.051 INFO  post-service [http-nio-8080-exec-1] b.p.s.controller.PostController - GetPostsByIds called count=1
+01:27:05.051 INFO  post-service [http-nio-8080-exec-1] b.pxl.services.services.PostService - Get posts by ids requested count=1
+01:27:05.053 DEBUG post-service [http-nio-8080-exec-1] b.pxl.services.services.PostService - Get posts by ids result count=1
+01:27:19.736 INFO  post-service [http-nio-8080-exec-4] b.p.s.controller.PostController - GetPublishedPosts called
+01:27:19.740 INFO  post-service [http-nio-8080-exec-4] b.pxl.services.services.PostService - Fetched published posts count=7
+01:27:26.053 INFO  post-service [http-nio-8080-exec-5] b.p.s.controller.PostController - FilterPosts called keyword=null author=yoran date=null
+01:27:26.074 DEBUG post-service [http-nio-8080-exec-5] b.p.s.controller.PostController - FilterPosts result count=4

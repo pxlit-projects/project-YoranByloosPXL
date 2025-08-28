@@ -3,10 +3,12 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable, firstValueFrom, switchMap, take } from 'rxjs';
 import { Post } from '../../models/post.model';
 import { AuthService } from '../auth/auth.service';
+import { environment } from '../../../environments/environment';
+import { Review } from '../../models/review.model';
 
 @Injectable({ providedIn: 'root' })
 export class ReviewService {
-  private readonly baseUrl = 'http://localhost:8084/reviews';
+  private readonly baseUrl = `${environment.apiBaseUrl}/reviews`;
   private auth = inject(AuthService);
 
   constructor(private http: HttpClient) {}
@@ -16,9 +18,14 @@ export class ReviewService {
       take(1),
       switchMap(username => {
         const headers = new HttpHeaders().set('username', username ?? '');
-        return this.http.get<Post[]>('http://localhost:8084/reviews/reviewable', { headers });
+        
+        return this.http.get<Post[]>(`${this.baseUrl}/reviewable`, { headers });
       })
     );
+  }
+
+  getByPostId(postId: number): Observable<Review[]> {
+    return this.http.get<Review[]>(`${this.baseUrl}/${postId}`);
   }
 
   async approve(postId: number): Promise<void> {

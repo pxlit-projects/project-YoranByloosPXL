@@ -4,10 +4,11 @@ import { Observable, switchMap, take } from 'rxjs';
 import { Post } from '../../models/post.model';
 import { firstValueFrom } from 'rxjs';
 import { AuthService } from '../auth/auth.service';
+import { environment } from '../../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class PostService {
-  private readonly baseUrl = 'http://localhost:8084/posts';
+  private readonly baseUrl = `${environment.apiBaseUrl}/posts`;
   private auth = inject(AuthService);
 
   constructor(private http: HttpClient) {}

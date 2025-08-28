@@ -8,7 +8,6 @@
   grid-template-columns: 1.1fr 0.9fr;
   gap: 24px;
 
-  /* navbar is ~64px hoog -> neem rest van het scherm in */
   min-height: calc(100vh - 80px);
   background: #fff;
   border-radius: 8px;
@@ -28,7 +27,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: min(520px, 100%);  /* schaalt netjes mee */
+  width: min(520px, 100%); 
   height: auto;
   pointer-events: none;
   user-select: none;
@@ -84,7 +83,6 @@ h1 {
   margin: 14px 0 22px;
 }
 
-/* afmetingen (mag je laten zoals je had) */
 .switch {
   position: relative;
   display: inline-block;
@@ -94,16 +92,14 @@ h1 {
 }
 .switch input { display: none; }
 
-/* rechthoekige track */
 .slider {
   position: absolute;
   inset: 0;
   background: #1d3f77;
-  border-radius: 0;        /* <— geen afgeronde hoeken */
+  border-radius: 0;
   transition: background .2s ease;
 }
 
-/* rechthoekige knop */
 .slider::before {
   content: "";
   position: absolute;
@@ -112,17 +108,16 @@ h1 {
   left: 4px;
   top: 4px;
   background: #fff;
-  border-radius: 0;        /* <— geen afgeronde hoeken */
+  border-radius: 0;
   box-shadow: 0 1px 2px rgba(0,0,0,.25);
   transition: transform .2s ease;
 }
 
-/* verplaatsing wanneer aangevinkt */
 .switch input:checked + .slider {
   background: #0e9c57;
 }
 .switch input:checked + .slider::before {
-  transform: translateX(27px); /* 42 - 16 - 8 = 18 */
+  transform: translateX(27px);
 }
 
 .btn {
@@ -154,7 +149,6 @@ h1 {
   border: 1px solid #e6ebf3;
 }
 
-/* Responsive */
 @media (max-width: 980px) {
   .login__inner {
     grid-template-columns: 1fr;

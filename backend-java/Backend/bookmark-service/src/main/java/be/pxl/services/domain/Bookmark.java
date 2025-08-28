@@ -1,6 +1,7 @@
 package be.pxl.services.domain;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
@@ -10,6 +11,7 @@ import java.time.LocalDateTime;
 @Table(name="bookmark")
 @Data
 @Builder
+@AllArgsConstructor
 public class Bookmark {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,14 +26,6 @@ public class Bookmark {
     private LocalDateTime updatedAt;
 
     public Bookmark() {}
-
-    public Bookmark(Long id, String username, Long postId, LocalDateTime createdAt, LocalDateTime updatedAt) {
-        this.id = id;
-        this.username = username;
-        this.postId = postId;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
-    }
 
     public Long getId() { return id; }
     public String getUsername() { return username; }

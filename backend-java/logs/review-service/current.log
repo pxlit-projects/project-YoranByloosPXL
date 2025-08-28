@@ -6032,3 +6032,14 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 01:00:52.010 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 01:05:52.018 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 01:10:52.027 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:15:24.069 INFO  review-service [http-nio-8081-exec-7] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+01:15:24.084 INFO  review-service [http-nio-8081-exec-7] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+01:15:39.532 INFO  review-service [http-nio-8081-exec-10] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+01:15:39.538 INFO  review-service [http-nio-8081-exec-10] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+01:15:52.042 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:20:52.043 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:24:04.801 INFO  review-service [http-nio-8081-exec-9] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+01:24:04.808 INFO  review-service [http-nio-8081-exec-9] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1
+01:25:52.049 INFO  review-service [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:26:40.185 INFO  review-service [http-nio-8081-exec-2] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+01:26:40.198 INFO  review-service [http-nio-8081-exec-2] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=1

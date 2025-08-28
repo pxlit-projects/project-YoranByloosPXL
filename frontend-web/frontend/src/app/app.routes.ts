@@ -10,16 +10,24 @@ import { SubmissionsComponent } from './components/submissions/submissions.compo
 import { ArticleDetailComponent } from './components/article/article-detail/article-detail.component';
 import { BookmarkListComponent } from './components/bookmark/bookmark-list/bookmark-list.component';
 
+import { authGuard } from './guards/auth.guard';
+import { pendingChangesGuard } from './guards/pending-changes.guard';
+
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
+
   { path: '', component: ArticleListComponent },
-  { path: 'admin/drafts', component: DraftListComponent },
-  { path: 'admin/update/:id', component: UpdateArticleComponent },
-  { path: 'admin/write', component: WriteArticleComponent },
-  { path: 'admin/review', component: ReviewListComponent },
-  { path: 'admin/review/:id', component: ReviewDetailComponent },
-  { path: 'admin/submissions', component: SubmissionsComponent },
+
+  { path: 'admin/drafts', component: DraftListComponent, canActivate: [authGuard] },
+  { path: 'admin/update/:id', component: UpdateArticleComponent, canActivate: [authGuard] },
+  { path: 'admin/write', component: WriteArticleComponent, canActivate: [authGuard], canDeactivate: [pendingChangesGuard] },
+  { path: 'admin/review', component: ReviewListComponent, canActivate: [authGuard] },
+  { path: 'admin/review/:id', component: ReviewDetailComponent, canActivate: [authGuard] },
+  { path: 'admin/submissions', component: SubmissionsComponent, canActivate: [authGuard] },
+
   { path: 'posts/:id', component: ArticleDetailComponent },
-  { path: 'bookmarks', component: BookmarkListComponent },
+
+  { path: 'bookmarks', component: BookmarkListComponent, canActivate: [authGuard] },
+
   { path: '**', redirectTo: '' }
 ];

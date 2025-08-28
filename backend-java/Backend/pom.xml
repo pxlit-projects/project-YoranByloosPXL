@@ -147,12 +147,12 @@
 									</limits>
 								</rule>
 							</rules>
-							<!-- Excludes (optioneel) -->
-							<!-- <excludes>
-                              <exclude>**/*Application.class</exclude>
-                              <exclude>**/config/**</exclude>
-                              <exclude>**/*Dto*</exclude>
-                            </excludes> -->
+							<excludes>
+                              	<exclude>**/*Application.class</exclude>
+                              	<exclude>**/config/**</exclude>
+                              	<exclude>**/*Dto*</exclude>
+								<exclude>**/domain+**</exclude>
+                            </excludes>
 						</configuration>
 					</execution>
 				</executions>

@@ -2,7 +2,8 @@
   <h1>Bewerk artikel</h1>
 
   <div *ngIf="loading" class="state">Laden…</div>
-  <div *ngIf="!loading">
+
+  <div class="layout" [class.has-reviews]="reviews.length > 0" *ngIf="!loading">
     <form [formGroup]="form" (ngSubmit)="save()" class="form">
       <label class="label" for="title">Titel</label>
       <input id="title" type="text" formControlName="title" class="input" />
@@ -16,5 +17,16 @@
 
       <div class="err" *ngIf="error">{{ error }}</div>
     </form>
+
+    <aside class="reviews" *ngIf="reviews.length > 0">
+      <h3 class="reviews__title">Reviews</h3>
+      <ul class="reviews__list">
+        <li class="reviews__item" *ngFor="let r of reviews">
+          <div class="reviews__who">{{ r.reviewer }}</div>
+          <div class="reviews__text">{{ r.comment }}</div>
+          <small class="reviews__date">{{ r.createdAt | date:'short' }}</small>
+        </li>
+      </ul>
+    </aside>
   </div>
 </section>

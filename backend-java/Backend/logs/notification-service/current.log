@@ -1,0 +1,12 @@
+01:57:26.695 INFO  notification-service [main] b.p.services.config.RabbitConfigTest - Starting RabbitConfigTest using Java 17.0.13 with PID 27940 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+01:57:26.696 DEBUG notification-service [main] b.p.services.config.RabbitConfigTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+01:57:26.697 INFO  notification-service [main] b.p.services.config.RabbitConfigTest - No active profile set, falling back to 1 default profile: "default"
+01:57:26.720 INFO  notification-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+01:57:26.720 INFO  notification-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=notification-service, profiles=[default], label=null, version=null, state=null
+01:57:27.327 INFO  notification-service [main] b.p.services.config.RabbitConfigTest - Started RabbitConfigTest in 1.651 seconds (process running for 2.446)
+02:06:38.584 INFO  notification-service [main] b.p.services.config.RabbitConfigTest - Starting RabbitConfigTest using Java 17.0.13 with PID 31620 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+02:06:38.586 DEBUG notification-service [main] b.p.services.config.RabbitConfigTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+02:06:38.587 INFO  notification-service [main] b.p.services.config.RabbitConfigTest - No active profile set, falling back to 1 default profile: "default"
+02:06:38.613 INFO  notification-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+02:06:38.613 INFO  notification-service [main] o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=notification-service, profiles=[default], label=null, version=null, state=null
+02:06:39.224 INFO  notification-service [main] b.p.services.config.RabbitConfigTest - Started RabbitConfigTest in 1.566 seconds (process running for 2.343)

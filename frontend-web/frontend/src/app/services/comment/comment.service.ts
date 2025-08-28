@@ -3,10 +3,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
 import { Comment } from '../../models/comment.model';
 import { AuthService } from '../auth/auth.service';
+import { environment } from '../../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class CommentService {
-  private readonly baseUrl = 'http://localhost:8084/comments';
+  private readonly baseUrl = `${environment.apiBaseUrl}/comments`;
   private auth = inject(AuthService);
 
   constructor(private http: HttpClient) {}

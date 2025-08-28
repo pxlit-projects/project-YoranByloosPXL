@@ -3,13 +3,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
 import { AuthService } from '../auth/auth.service';
 import { Post } from '../../models/post.model';
+import { environment } from '../../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class BookmarkService {
   private http = inject(HttpClient);
   private auth = inject(AuthService);
 
-  private readonly baseUrl = 'http://localhost:8084/bookmarks';
+  private readonly baseUrl = `${environment.apiBaseUrl}/bookmarks`;
 
   private async headers(): Promise<HttpHeaders> {
     const username = await firstValueFrom(this.auth.username$);
