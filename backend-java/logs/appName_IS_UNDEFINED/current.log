@@ -814,3 +814,120 @@
 11:31:23.402 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-1] b.pxl.services.services.PostService - Fetched drafts for user=yoran count=3
 11:31:30.186 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-4] b.p.s.controller.PostController - GetDrafts called for user=yoran
 11:31:30.190 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-4] b.pxl.services.services.PostService - Fetched drafts for user=yoran count=3
+11:35:20.608 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:35:29.977 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:35:43.479 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:35:55.509 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:36:05.089 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:40:20.620 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:40:29.978 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:40:43.490 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:40:55.512 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:41:05.099 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:45:20.631 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:45:29.990 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:45:43.505 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:45:55.524 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:46:05.111 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:50:20.644 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:50:30.000 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:50:43.507 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:50:55.536 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:51:05.116 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:55:18.681 INFO  appName_IS_UNDEFINED [http-nio-8081-exec-1] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+11:55:18.778 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-8] b.p.s.controller.PostController - GetReviewablePosts called reviewer=admin
+11:55:18.826 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-8] b.pxl.services.services.PostService - Fetched reviewable posts for reviewer=admin count=0
+11:55:18.838 INFO  appName_IS_UNDEFINED [http-nio-8081-exec-1] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=0
+11:55:19.301 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-3] b.p.s.controller.PostController - GetMySubmissions called user=admin
+11:55:19.310 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-3] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=3
+11:55:19.826 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-7] b.p.s.controller.PostController - GetDrafts called for user=admin
+11:55:19.827 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-7] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+11:55:20.454 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-6] b.p.s.controller.PostController - GetPublishedPosts called
+11:55:20.458 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-6] b.pxl.services.services.PostService - Fetched published posts count=8
+11:55:20.655 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:55:26.229 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-10] b.p.s.controller.PostController - FilterPosts called keyword=post author=null date=null
+11:55:26.275 DEBUG appName_IS_UNDEFINED [http-nio-8080-exec-10] b.p.s.controller.PostController - FilterPosts result count=1
+11:55:30.002 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:55:31.067 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-9] b.p.s.controller.PostController - FilterPosts called keyword=test author=null date=null
+11:55:31.072 DEBUG appName_IS_UNDEFINED [http-nio-8080-exec-9] b.p.s.controller.PostController - FilterPosts result count=3
+11:55:34.832 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-1] b.p.s.controller.PostController - GetPublishedPosts called
+11:55:34.834 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-1] b.pxl.services.services.PostService - Fetched published posts count=8
+11:55:38.087 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-4] b.p.s.controller.PostController - GetDrafts called for user=admin
+11:55:38.089 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-4] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+11:55:38.576 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-5] b.p.s.controller.PostController - GetMySubmissions called user=admin
+11:55:38.578 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-5] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=3
+11:55:39.944 INFO  appName_IS_UNDEFINED [http-nio-8081-exec-2] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+11:55:39.947 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-2] b.p.s.controller.PostController - GetReviewablePosts called reviewer=admin
+11:55:39.949 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-2] b.pxl.services.services.PostService - Fetched reviewable posts for reviewer=admin count=0
+11:55:39.951 INFO  appName_IS_UNDEFINED [http-nio-8081-exec-2] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=0
+11:55:40.723 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-8] b.p.s.controller.PostController - GetMySubmissions called user=admin
+11:55:40.725 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-8] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=3
+11:55:43.520 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:55:45.617 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-3] b.p.s.controller.PostController - GetDrafts called for user=admin
+11:55:45.619 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-3] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+11:55:46.411 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-7] b.p.s.controller.PostController - GetMySubmissions called user=admin
+11:55:46.417 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-7] b.pxl.services.services.PostService - Fetched my submissions for user=admin count=3
+11:55:47.068 INFO  appName_IS_UNDEFINED [http-nio-8081-exec-3] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=admin
+11:55:47.070 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-6] b.p.s.controller.PostController - GetReviewablePosts called reviewer=admin
+11:55:47.073 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-6] b.pxl.services.services.PostService - Fetched reviewable posts for reviewer=admin count=0
+11:55:47.074 INFO  appName_IS_UNDEFINED [http-nio-8081-exec-3] b.p.services.services.ReviewService - Fetched reviewable posts for reviewer=admin count=0
+11:55:47.650 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-10] b.p.s.controller.PostController - GetDrafts called for user=admin
+11:55:47.651 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-10] b.pxl.services.services.PostService - Fetched drafts for user=admin count=0
+11:55:48.184 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-9] b.p.s.controller.PostController - GetPublishedPosts called
+11:55:48.186 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-9] b.pxl.services.services.PostService - Fetched published posts count=8
+11:55:50.389 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-10] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=admin
+11:55:50.431 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-10] b.p.s.services.BookmarkService - GetBookmarkedPosts user=admin count=1
+11:55:50.446 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-1] b.p.s.controller.PostController - GetPostsByIds called count=1
+11:55:50.446 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-1] b.pxl.services.services.PostService - Get posts by ids requested count=1
+11:55:50.451 DEBUG appName_IS_UNDEFINED [http-nio-8080-exec-1] b.pxl.services.services.PostService - Get posts by ids result count=1
+11:55:55.171 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-1] b.p.s.controller.BookmarkController - RemoveBookmark requested by user=admin postId=52
+11:55:55.181 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-1] b.p.s.services.BookmarkService - RemoveBookmark requested user=admin postId=52
+11:55:55.549 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:55:56.120 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-4] b.p.s.controller.PostController - GetPublishedPosts called
+11:55:56.122 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-4] b.pxl.services.services.PostService - Fetched published posts count=8
+11:55:59.523 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-5] b.p.s.controller.PostController - GetPostById called id=55
+11:55:59.524 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-5] b.pxl.services.services.PostService - Get post by id requested id=55
+11:55:59.539 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-2] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=admin
+11:55:59.542 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-2] b.p.s.services.BookmarkService - GetBookmarkedPosts user=admin count=0
+11:55:59.599 INFO  appName_IS_UNDEFINED [http-nio-8082-exec-6] b.p.s.controller.CommentController - GetCommentsByPostId called postId=55
+11:55:59.633 INFO  appName_IS_UNDEFINED [http-nio-8082-exec-6] b.p.services.services.CommentService - Fetched comments for postId=55 count=1
+11:56:00.678 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-4] b.p.s.controller.BookmarkController - AddBookmark requested by user=admin postId=55
+11:56:00.687 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-4] b.p.s.services.BookmarkService - AddBookmark requested user=admin postId=55
+11:56:00.830 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-2] b.p.s.controller.PostController - GetPostById called id=55
+11:56:00.830 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-2] b.pxl.services.services.PostService - Get post by id requested id=55
+11:56:01.443 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-8] b.p.s.controller.PostController - GetPublishedPosts called
+11:56:01.446 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-8] b.pxl.services.services.PostService - Fetched published posts count=8
+11:56:03.389 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-3] b.p.s.controller.PostController - GetPostById called id=54
+11:56:03.389 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-3] b.pxl.services.services.PostService - Get post by id requested id=54
+11:56:03.399 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-8] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=admin
+11:56:03.404 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-8] b.p.s.services.BookmarkService - GetBookmarkedPosts user=admin count=1
+11:56:03.406 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-7] b.p.s.controller.PostController - GetPostsByIds called count=1
+11:56:03.406 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-7] b.pxl.services.services.PostService - Get posts by ids requested count=1
+11:56:03.408 DEBUG appName_IS_UNDEFINED [http-nio-8080-exec-7] b.pxl.services.services.PostService - Get posts by ids result count=1
+11:56:03.432 INFO  appName_IS_UNDEFINED [http-nio-8082-exec-7] b.p.s.controller.CommentController - GetCommentsByPostId called postId=54
+11:56:03.442 INFO  appName_IS_UNDEFINED [http-nio-8082-exec-7] b.p.services.services.CommentService - Fetched comments for postId=54 count=1
+11:56:04.404 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-5] b.p.s.controller.BookmarkController - AddBookmark requested by user=admin postId=54
+11:56:04.405 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-5] b.p.s.services.BookmarkService - AddBookmark requested user=admin postId=54
+11:56:04.409 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-6] b.p.s.controller.PostController - GetPostById called id=54
+11:56:04.409 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-6] b.pxl.services.services.PostService - Get post by id requested id=54
+11:56:05.119 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:56:06.223 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-6] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=admin
+11:56:06.227 INFO  appName_IS_UNDEFINED [http-nio-8083-exec-6] b.p.s.services.BookmarkService - GetBookmarkedPosts user=admin count=2
+11:56:06.230 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-10] b.p.s.controller.PostController - GetPostsByIds called count=2
+11:56:06.230 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-10] b.pxl.services.services.PostService - Get posts by ids requested count=2
+11:56:06.234 DEBUG appName_IS_UNDEFINED [http-nio-8080-exec-10] b.pxl.services.services.PostService - Get posts by ids result count=2
+11:56:11.534 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-9] b.p.s.controller.PostController - GetPublishedPosts called
+11:56:11.537 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-9] b.pxl.services.services.PostService - Fetched published posts count=8
+11:56:15.989 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-1] b.p.s.controller.PostController - GetPublishedPosts called
+11:56:15.991 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-1] b.pxl.services.services.PostService - Fetched published posts count=8
+11:56:16.059 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-5] b.p.s.controller.PostController - GetPublishedPosts called
+11:56:16.061 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-5] b.pxl.services.services.PostService - Fetched published posts count=8
+12:00:20.659 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:00:30.018 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:00:43.536 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:00:55.560 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:01:05.126 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:05:03.889 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-7] b.p.s.controller.PostController - GetPublishedPosts called
+12:05:03.948 INFO  appName_IS_UNDEFINED [http-nio-8080-exec-7] b.pxl.services.services.PostService - Fetched published posts count=8
+12:05:20.670 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:05:30.040 INFO  appName_IS_UNDEFINED [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

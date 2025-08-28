@@ -6879,3 +6879,140 @@ Caused by: java.lang.IllegalStateException: You need to configure a uri for the 
 09:54:40.774 INFO  gateway-service [SpringApplicationShutdownHook] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 09:54:40.784 INFO  gateway-service [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 09:54:40.784 INFO  gateway-service [SpringApplicationShutdownHook] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+11:56:49.487 INFO  gateway-service [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+11:56:49.631 INFO  gateway-service [main] b.p.s.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.13 with PID 37516 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+11:56:49.631 DEBUG gateway-service [main] b.p.s.controller.PostControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+11:56:49.632 INFO  gateway-service [main] b.p.s.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+11:56:52.857 INFO  gateway-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11:56:52.857 INFO  gateway-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11:56:52.859 INFO  gateway-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11:56:53.055 INFO  gateway-service [main] b.p.s.controller.PostControllerTest - Started PostControllerTest in 4.652 seconds (process running for 10.756)
+11:56:53.181 INFO  gateway-service [main] b.p.s.controller.PostController - FilterPosts called keyword=post author=yo date=2025-09-25
+11:56:53.204 DEBUG gateway-service [main] b.p.s.controller.PostController - FilterPosts result count=0
+11:56:53.387 INFO  gateway-service [main] b.p.s.controller.PostController - FilterPosts called keyword=x author=null date=nonsense
+11:56:53.388 WARN  gateway-service [main] b.p.s.controller.PostController - Unsupported date format 'nonsense', ignoring date filter
+11:56:53.388 DEBUG gateway-service [main] b.p.s.controller.PostController - FilterPosts result count=0
+11:56:53.402 INFO  gateway-service [main] b.p.s.controller.PostController - GetPostsByIds called count=2
+11:56:53.412 INFO  gateway-service [main] b.p.s.controller.PostController - GetPublishedPosts called
+11:56:53.468 INFO  gateway-service [main] b.p.s.controller.PostController - ApprovePost requested id=42
+11:56:53.475 INFO  gateway-service [main] b.p.s.controller.PostController - FilterPosts called keyword=abc author=null date=2025-09-01T00:00:00
+11:56:53.476 DEBUG gateway-service [main] b.p.s.controller.PostController - FilterPosts result count=0
+11:56:53.483 INFO  gateway-service [main] b.p.s.controller.PostController - DisapprovePost requested id=5
+11:56:53.769 INFO  gateway-service [main] b.pxl.services.services.PostService - Get posts by ids requested count=0
+11:56:53.780 INFO  gateway-service [main] b.pxl.services.services.PostService - Get posts by ids requested count=0
+11:56:53.783 INFO  gateway-service [main] b.pxl.services.services.PostService - Submit post requested id=99 by user=yoran
+11:56:53.784 DEBUG gateway-service [main] b.pxl.services.services.PostService - Post submitted id=99 newStatus=INGEDIEND
+11:56:53.787 INFO  gateway-service [main] b.pxl.services.services.PostService - Fetched my submissions for user=yoran count=1
+11:56:53.790 INFO  gateway-service [main] b.pxl.services.services.PostService - Update post requested id=99 by user=yoran
+11:56:53.791 DEBUG gateway-service [main] b.pxl.services.services.PostService - Post updated id=99 status=CONCEPT
+11:56:53.800 INFO  gateway-service [main] b.pxl.services.services.PostService - Fetched drafts for user=yoran count=1
+11:56:53.803 INFO  gateway-service [main] b.pxl.services.services.PostService - Update post requested id=99 by user=not-yoran
+11:56:53.803 WARN  gateway-service [main] b.pxl.services.services.PostService - Unauthorized update attempt id=99 by user=not-yoran (status=CONCEPT)
+11:56:53.808 INFO  gateway-service [main] b.pxl.services.services.PostService - Publish post requested id=2 by user=a
+11:56:53.809 DEBUG gateway-service [main] b.pxl.services.services.PostService - Post published id=2 status=GEPUBLICEERD
+11:56:53.811 INFO  gateway-service [main] b.pxl.services.services.PostService - Fetched published posts count=1
+11:56:53.812 INFO  gateway-service [main] b.pxl.services.services.PostService - Get post by id requested id=99
+11:56:53.815 INFO  gateway-service [main] b.pxl.services.services.PostService - Create post requested by user=yoran submitForReview=true title='Hello'
+11:56:53.815 DEBUG gateway-service [main] b.pxl.services.services.PostService - Post created id=1 status=INGEDIEND
+11:56:53.817 INFO  gateway-service [main] b.pxl.services.services.PostService - Fetched reviewable posts for reviewer=admin count=1
+11:56:53.818 INFO  gateway-service [main] b.pxl.services.services.PostService - Publish post requested id=1 by user=a
+11:56:53.819 WARN  gateway-service [main] b.pxl.services.services.PostService - Publish rejected id=1 status=CONCEPT
+11:56:54.012 INFO  gateway-service [main] b.p.s.r.BookmarkRepositoryTest - Starting BookmarkRepositoryTest using Java 17.0.13 with PID 37516 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+11:56:54.012 DEBUG gateway-service [main] b.p.s.r.BookmarkRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+11:56:54.012 INFO  gateway-service [main] b.p.s.r.BookmarkRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+11:56:54.212 INFO  gateway-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:56:54.291 INFO  gateway-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 5 JPA repository interfaces.
+11:56:54.350 INFO  gateway-service [main] o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+11:56:54.418 INFO  gateway-service [main] o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:930d4b6e-a1bb-4c73-bcc3-ada78ba26a26;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+11:56:54.933 INFO  gateway-service [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:56:55.042 INFO  gateway-service [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+11:56:55.047 INFO  gateway-service [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+11:56:55.327 INFO  gateway-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+11:56:55.344 INFO  gateway-service [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:56:55.462 INFO  gateway-service [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+11:56:55.926 INFO  gateway-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+11:56:56.892 INFO  gateway-service [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:56:56.960 INFO  gateway-service [main] o.h.t.s.i.e.GenerationTargetToDatabase - HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+11:56:56.965 INFO  gateway-service [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:56:57.563 INFO  gateway-service [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11:56:58.386 INFO  gateway-service [main] b.p.s.r.BookmarkRepositoryTest - Started BookmarkRepositoryTest in 4.554 seconds (process running for 16.087)
+11:56:58.686 INFO  gateway-service [main] b.p.services.services.CommentService - Fetched comments for postId=7 count=1
+11:56:58.688 INFO  gateway-service [main] b.p.services.services.CommentService - Add comment requested by user=ann postId=5
+11:56:58.690 INFO  gateway-service [main] b.p.services.services.CommentService - Delete comment requested commentId=33 by user=ann
+11:56:58.692 INFO  gateway-service [main] b.p.services.services.CommentService - Delete comment requested commentId=44 by user=ann
+11:56:58.692 WARN  gateway-service [main] b.p.services.services.CommentService - Unauthorized comment delete attempt commentId=44 by user=ann
+11:56:58.693 INFO  gateway-service [main] b.p.services.services.CommentService - Update comment requested commentId=12 by user=ann
+11:56:58.694 WARN  gateway-service [main] b.p.services.services.CommentService - Unauthorized comment update attempt commentId=12 by user=ann
+11:56:58.695 INFO  gateway-service [main] b.p.services.services.CommentService - Delete comment requested commentId=77 by user=ann
+11:56:58.696 WARN  gateway-service [main] b.p.services.services.CommentService - Comment not found commentId=77
+11:56:58.697 INFO  gateway-service [main] b.p.services.services.CommentService - Update comment requested commentId=11 by user=ann
+11:56:58.699 INFO  gateway-service [main] b.p.services.services.CommentService - Update comment requested commentId=99 by user=ann
+11:56:58.699 WARN  gateway-service [main] b.p.services.services.CommentService - Comment not found commentId=99
+11:56:59.097 INFO  gateway-service [main] b.p.s.c.NotificationControllerTest - Starting NotificationControllerTest using Java 17.0.13 with PID 37516 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+11:56:59.098 DEBUG gateway-service [main] b.p.s.c.NotificationControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+11:56:59.098 INFO  gateway-service [main] b.p.s.c.NotificationControllerTest - No active profile set, falling back to 1 default profile: "default"
+11:56:59.327 INFO  gateway-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11:56:59.328 INFO  gateway-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11:56:59.328 INFO  gateway-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+11:56:59.332 INFO  gateway-service [main] b.p.s.c.NotificationControllerTest - Started NotificationControllerTest in 0.472 seconds (process running for 17.034)
+11:56:59.620 INFO  gateway-service [main] b.p.s.r.CommentRepositoryTest - Starting CommentRepositoryTest using Java 17.0.13 with PID 37516 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+11:56:59.620 DEBUG gateway-service [main] b.p.s.r.CommentRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+11:56:59.621 INFO  gateway-service [main] b.p.s.r.CommentRepositoryTest - The following 1 profile is active: "test"
+11:56:59.718 INFO  gateway-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:56:59.757 INFO  gateway-service [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+11:56:59.768 INFO  gateway-service [main] o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+11:56:59.778 INFO  gateway-service [main] o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:83068cdc-793c-415f-a00e-fe3f1f3411be;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+11:56:59.802 INFO  gateway-service [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:56:59.828 INFO  gateway-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+11:56:59.828 INFO  gateway-service [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:56:59.832 INFO  gateway-service [main] org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+11:56:59.852 INFO  gateway-service [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+11:56:59.918 INFO  gateway-service [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:56:59.927 INFO  gateway-service [main] o.h.t.s.i.e.GenerationTargetToDatabase - HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+11:56:59.928 INFO  gateway-service [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:57:00.015 INFO  gateway-service [main] b.p.s.r.CommentRepositoryTest - Started CommentRepositoryTest in 0.576 seconds (process running for 17.716)
+11:57:00.280 INFO  gateway-service [main] b.p.s.c.CommentControllerTest - Starting CommentControllerTest using Java 17.0.13 with PID 37516 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+11:57:00.280 DEBUG gateway-service [main] b.p.s.c.CommentControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+11:57:00.280 INFO  gateway-service [main] b.p.s.c.CommentControllerTest - No active profile set, falling back to 1 default profile: "default"
+11:57:00.529 INFO  gateway-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11:57:00.529 INFO  gateway-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11:57:00.530 INFO  gateway-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+11:57:00.534 INFO  gateway-service [main] b.p.s.c.CommentControllerTest - Started CommentControllerTest in 0.423 seconds (process running for 18.235)
+11:57:00.600 INFO  gateway-service [main] b.p.s.controller.CommentController - AddComment requested by user=joris for postId=7
+11:57:00.615 INFO  gateway-service [main] b.p.s.controller.CommentController - DeleteComment requested commentId=42 by user=ann
+11:57:00.621 INFO  gateway-service [main] b.p.s.controller.CommentController - GetCommentsByPostId called postId=5
+11:57:00.630 INFO  gateway-service [main] b.p.s.controller.CommentController - UpdateComment requested commentId=5 by user=ann
+11:57:00.638 WARN  gateway-service [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'username' for method parameter type String is not present]
+11:57:00.675 INFO  gateway-service [main] b.p.s.services.BookmarkService - AddBookmark requested user=ann postId=10
+11:57:00.678 INFO  gateway-service [main] b.p.s.services.BookmarkService - AddBookmark requested user=ann postId=10
+11:57:00.679 INFO  gateway-service [main] b.p.s.services.BookmarkService - GetBookmarkedPosts user=ann count=2
+11:57:00.681 INFO  gateway-service [main] b.p.s.services.BookmarkService - RemoveBookmark requested user=ann postId=10
+11:57:00.682 INFO  gateway-service [main] b.p.s.services.BookmarkService - RemoveBookmark requested user=ann postId=10
+11:57:00.683 INFO  gateway-service [main] b.p.s.services.BookmarkService - AddBookmark requested user=ann postId=10
+11:57:00.684 INFO  gateway-service [main] b.p.s.services.BookmarkService - GetBookmarkedPosts user=ann count=0
+11:57:01.061 INFO  gateway-service [main] b.p.s.c.BookmarkControllerTest - Starting BookmarkControllerTest using Java 17.0.13 with PID 37516 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+11:57:01.062 DEBUG gateway-service [main] b.p.s.c.BookmarkControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+11:57:01.062 INFO  gateway-service [main] b.p.s.c.BookmarkControllerTest - No active profile set, falling back to 1 default profile: "default"
+11:57:01.275 INFO  gateway-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11:57:01.275 INFO  gateway-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11:57:01.276 INFO  gateway-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+11:57:01.280 INFO  gateway-service [main] b.p.s.c.BookmarkControllerTest - Started BookmarkControllerTest in 0.392 seconds (process running for 18.981)
+11:57:01.284 INFO  gateway-service [main] b.p.s.controller.BookmarkController - RemoveBookmark requested by user=ann postId=7
+11:57:01.291 INFO  gateway-service [main] b.p.s.controller.BookmarkController - AddBookmark requested by user=ann postId=9
+11:57:01.300 INFO  gateway-service [main] b.p.s.controller.BookmarkController - GetMyBookmarkedPosts called for user=ann
+11:57:01.573 INFO  gateway-service [main] b.p.s.c.ReviewControllerTest - Starting ReviewControllerTest using Java 17.0.13 with PID 37516 (started by yoran in C:\Users\yoran\Java-Project\project-YoranByloosPXL\backend-java\Backend)
+11:57:01.573 DEBUG gateway-service [main] b.p.s.c.ReviewControllerTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+11:57:01.573 INFO  gateway-service [main] b.p.s.c.ReviewControllerTest - No active profile set, falling back to 1 default profile: "default"
+11:57:01.768 INFO  gateway-service [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11:57:01.768 INFO  gateway-service [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11:57:01.768 INFO  gateway-service [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+11:57:01.771 INFO  gateway-service [main] b.p.s.c.ReviewControllerTest - Started ReviewControllerTest in 0.412 seconds (process running for 19.473)
+11:57:01.775 INFO  gateway-service [main] b.p.s.controller.ReviewController - ApprovePost requested postId=123
+11:57:01.781 INFO  gateway-service [main] b.p.s.controller.ReviewController - RejectPost requested postId=7 by reviewer=ann
+11:57:01.790 INFO  gateway-service [main] b.p.s.controller.ReviewController - GetReviewsByPostId called postId=5
+11:57:01.796 INFO  gateway-service [main] b.p.s.controller.ReviewController - GetReviewablePosts called reviewer=ann
+11:57:01.801 WARN  gateway-service [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'username' for method parameter type String is not present]
+11:57:01.810 INFO  gateway-service [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:57:01.810 INFO  gateway-service [SpringApplicationShutdownHook] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+11:57:01.819 INFO  gateway-service [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:57:01.819 INFO  gateway-service [SpringApplicationShutdownHook] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'

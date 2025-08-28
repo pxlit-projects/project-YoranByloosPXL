@@ -1,13 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 import { convertToParamMap, ActivatedRoute, Router } from '@angular/router';
+import { of } from 'rxjs';
 
 import { UpdateArticleComponent } from './update-article.component';
 import { PostService } from '../../../services/post/post.service';
+import { ReviewService } from '../../../services/review/review.service';
 import { Post } from '../../../models/post.model';
 
 describe('UpdateArticleComponent', () => {
   let postSvc: jasmine.SpyObj<PostService>;
   let router: jasmine.SpyObj<Router>;
+  let reviewSvc: jasmine.SpyObj<ReviewService>;
 
   const routeMock: Partial<ActivatedRoute> = {
     snapshot: { paramMap: convertToParamMap({ id: '5' }) } as any,
@@ -27,6 +30,8 @@ describe('UpdateArticleComponent', () => {
   beforeEach(async () => {
     postSvc = jasmine.createSpyObj<PostService>('PostService', ['getById', 'updateDraft']);
     router  = jasmine.createSpyObj<Router>('Router', ['navigate']);
+    reviewSvc = jasmine.createSpyObj<ReviewService>('ReviewService', ['getByPostId']);
+    reviewSvc.getByPostId.and.returnValue(of([]));
 
     await TestBed.configureTestingModule({
       imports: [UpdateArticleComponent],
@@ -34,6 +39,7 @@ describe('UpdateArticleComponent', () => {
         { provide: ActivatedRoute, useValue: routeMock },
         { provide: Router, useValue: router },
         { provide: PostService, useValue: postSvc },
+        { provide: ReviewService, useValue: reviewSvc },
       ],
     }).compileComponents();
   });
